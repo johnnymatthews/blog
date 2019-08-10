@@ -1,4 +1,9 @@
-# The Search for Sunrise - Part Two 
+---
+title: The Search for Sunrise - Part Two 
+date: 2017-08-29
+---
+
+## The Search for Sunrise - Part Two
 
 About a week ago a colleague of mine introduced me to a French children's story called *Le Petit Prince*, written by [Antoine de Saint-Exupery](https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry).
 
