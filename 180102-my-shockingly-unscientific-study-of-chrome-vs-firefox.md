@@ -13,7 +13,7 @@ With that out of the way, let's get into it.
 
 Why browser is slower at opening GitLab? Pretty simple question really. I want to know if Firefox takes longer to fully load a GitLab page than Chrome. I'd noticed Firefox lagging a little bit when trying to open some GitLab pages, and thought I'd test it.
 
-So I open Firefox, went to [GitLab.com](https://www.gitlab.com), signed in, clicked on a repo, clicked on a folder inside that repo, and finally clicked on a file inside that folder inside that repo. At each step I took a screenshot of the network console to get the load times and download sizes of each page. 
+So I open Firefox, went to [GitLab.com](https://www.gitlab.com), signed in, clicked on a repo, clicked on a folder inside that repo, and finally clicked on a file inside that folder inside that repo. At each step I took a screenshot of the network console to get the load times and download sizes of each page.
 
 I then did the **exact same** with Chrome. I also disabled all extentions in both browsers, and cleared the caches. 
 
@@ -84,6 +84,8 @@ Yet again, Chrome comes out on top! Clearly I've been reading to wrong articles 
 ## Coolest Loading Icons
 
 It's Firefox. There's no point debating it.
+
+![Firefox Loading Icon](media/180102-my-shockingly-unscientific-study-of-chrome-vs-firefox/loading-icons.gif)
 
 ## Conclusion
 

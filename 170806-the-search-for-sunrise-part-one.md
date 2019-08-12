@@ -3,7 +3,7 @@ title: The Search for Sunrise, Part One
 date: 2017-08-06
 ---
 
-Hidden in the depths of Spotify exists a track called "At Last, Sunrise". It's slightly over two minutes long so if you have a Spotify account I recommend giving it a quick listen. Even if you're not into classical music, give it a go. It's only two minutes.
+Hidden in the depths of Spotify exists a track called "At Last, Sunrise". It's slightly over two minutes long so if you have a Spotify account I recommend giving it a quick listen. Even if you're not into classical music, give it a go. It's only two minutes long.
 
 Unfortunately, if you don't have a Spotify account then you're out of luck. Spotify is the only place you can find it. There is no YouTube channel, Bandcamp profile, or Soundcloud page. And if you're thinking you'll just buy the CD, then I'm afraid you'll find no joy there either. There are no places to purchase a physical copy of Maree Docia's music.
 
