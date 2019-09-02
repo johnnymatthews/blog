@@ -46,95 +46,95 @@ pass --version
 
 The GPG key is what encrypts your passwords and keeps them safe. You need to have access to your GPG key in order to read any of your passwords.
 
-1. Start the key generation:
+1\. Start the key generation:
 
-    ```bash
-    gpg --gen-key
+```bash
+gpg --gen-key
 
-    > gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
-    > This is free software: you are free to change and redistribute it.
-    > There is NO WARRANTY, to the extent permitted by law.
-    …
-    ```
+> gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
+> This is free software: you are free to change and redistribute it.
+> There is NO WARRANTY, to the extent permitted by law.
+…
+```
 
-2. Select the `RSA and RSA (default)` option:
+2\. Select the `RSA and RSA (default)` option:
 
-    ```bash
-    > Please select what kind of key you want:
-    >    (1) RSA and RSA (default)
-    >    (2) DSA and Elgamal
-    >    (3) DSA (sign only)
-    >    (4) RSA (sign only)
-    > Your selection?
+```bash
+> Please select what kind of key you want:
+>    (1) RSA and RSA (default)
+>    (2) DSA and Elgamal
+>    (3) DSA (sign only)
+>    (4) RSA (sign only)
+> Your selection?
 
-    1
-    ```
+1
+```
 
-3. Set the key size to 4096:
+3\. Set the key size to 4096:
 
-    ```bash
-    > RSA keys may be between 1024 and 4096 bits long.
-    > What keysize do you want? (2048):
+```bash
+> RSA keys may be between 1024 and 4096 bits long.
+> What keysize do you want? (2048):
 
-    4096
-    ```
+4096
+```
 
-4. Set when you want the key to expire. While having a key that doesn't expire is convienent, it's insecure. You're best off selecting 1 month:
+4\. Set when you want the key to expire. While having a key that doesn't expire is convienent, it's insecure. You're best off selecting 1 month:
 
-    ```bash
-    > Please specify how long the key should be valid.
-    >          0 = key does not expire
-    >       <n>  = key expires in n days
-    >       <n>w = key expires in n weeks
-    >       <n>m = key expires in n months
-    >       <n>y = key expires in n years
+```bash
+> Please specify how long the key should be valid.
+>          0 = key does not expire
+>       <n>  = key expires in n days
+>       <n>w = key expires in n weeks
+>       <n>m = key expires in n months
+>       <n>y = key expires in n years
 
-    1m
-    ```
+1m
+```
 
-    It'll ask you to confirm that the expiration date is correct:
+It'll ask you to confirm that the expiration date is correct:
 
-    ```bash
-    > Key expires at Mon 05 Aug 2019 03:12:25 PM UTC
-    > Is this correct? (y/N)
+```bash
+> Key expires at Mon 05 Aug 2019 03:12:25 PM UTC
+> Is this correct? (y/N)
 
-    y
-    ```
+y
+```
 
-5. Next up is to add your details into the key. This gets handy when you have more than one key on your system and you need to keep track of which one's which:
+5\. Next up is to add your details into the key. This gets handy when you have more than one key on your system and you need to keep track of which one's which:
 
-    ```bash
-    > Real name: Johnny
-    > Email address: johnny@email.com
-    > Comment: Key for Unix Pass
-    > You selected this USER-ID:
-    >     "Johnny (Key for Unix Pass) <johnny@email.com>"
-    ```
+```bash
+> Real name: Johnny
+> Email address: johnny@email.com
+> Comment: Key for Unix Pass
+> You selected this USER-ID:
+>     "Johnny (Key for Unix Pass) <johnny@email.com>"
+```
 
-6. Enter `O` to select that everything's okay:
+6\. Enter `O` to select that everything's okay:
 
-    ```bash
-    > Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?
-    O
-    ```
+```bash
+> Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?
+O
+```
 
-7. The last thing you've got to do is enter a strong password to protect your key. This way, if anyone steals you key, they can't use it without this password. Make sure to remember this as you'll need to enter it everytime you want to view or edit a password.
+7\. The last thing you've got to do is enter a strong password to protect your key. This way, if anyone steals you key, they can't use it without this password. Make sure to remember this as you'll need to enter it everytime you want to view or edit a password.
 
-8. After a few seconds you should see something like the following:
+8\. After a few seconds you should see something like the following:
 
-    ```bash
-    > gpg: key CA987727 marked as ultimately trusted
-    > public and secret key created and signed.
-    > 
-    > gpg: checking the trustdb
-    > gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
-    > gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
-    > gpg: next trustdb check due at 2019-08-05
-    > pub   4096R/CA987727 2019-07-06 [expires: 2019-08-05]
-    >       Key fingerprint = 027E 5752 0AF7 C0B5 5E89  59B3 F873 743F CA98 7727
-    > uid                  Johnny (Unix Pass Manager) <johnny@email.com>
-    > sub   4096R/05750380 2019-07-06 [expires: 2019-08-05]
-    ```
+```bash
+> gpg: key CA987727 marked as ultimately trusted
+> public and secret key created and signed.
+> 
+> gpg: checking the trustdb
+> gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+> gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+> gpg: next trustdb check due at 2019-08-05
+> pub   4096R/CA987727 2019-07-06 [expires: 2019-08-05]
+>       Key fingerprint = 027E 5752 0AF7 C0B5 5E89  59B3 F873 743F CA98 7727
+> uid                  Johnny (Unix Pass Manager) <johnny@email.com>
+> sub   4096R/05750380 2019-07-06 [expires: 2019-08-05]
+```
 
 So that's your GPG key sorted, keep it safe! You won't be able to access your passwords without it.
 
@@ -155,9 +155,11 @@ Pass will make a new directory `~/.password-store` and put your passwords in the
 
 Now that you've got your GPG key created and ready to use, we're going to create a private repository on GitHub to store your keys. This step is option, but incredibly useful if you plan on using your password manager on multiple devices.
 
-1. Go to [GitHub.com](https://github.com/) and create a new **private** repository.
-2. Copy the repository URL to your clipboard.
-3. Back in the terminal, add your GitHub repo to your password store:
+1\. Go to [GitHub.com](https://github.com/) and create a new **private** repository.
+
+2\. Copy the repository URL to your clipboard.
+
+3\. Back in the terminal, add your GitHub repo to your password store:
 
 ```bash
 pass git init
@@ -165,7 +167,7 @@ pass git init
 > Initialized empty Git repository in /home/vagrant/.password-store/.git/
 ```
 
-4. Tell Git and Pass where your repository is stored by running this command and adding your repository's URL onto the end:
+4\. Tell Git and Pass where your repository is stored by running this command and adding your repository's URL onto the end:
 
 ```bash
 pass git remote add origin YOUR_GIT_URL
@@ -197,20 +199,20 @@ At the moment I don't have any passwords stored in Pass, so let's add one.
 
 ### Add Password
 
-1. Create a new password for GitHub:
+1\. Create a new password for GitHub:
 
 ```bash
 pass add personal/github
 ```
 
-2. Pass will ask you to enter the password twice.
+2\. Pass will ask you to enter the password twice.
 
 ```bash
 > Enter password for personal/github:
 > Retype password for personal/github:
 ```
 
-3. You now have a password stored in Pass! You can see it by listing all the passwords in your password store with the `pass` command:
+3\. You now have a password stored in Pass! You can see it by listing all the passwords in your password store with the `pass` command:
 
 ```bash
 pass
@@ -295,43 +297,47 @@ Many people use LastPass as their password manager. Luckily, some of the Unix Pa
 
 First up, you need to export your LastPass password library:
 
-1. Go to LastPass.com and login.
-2. Click **More Options** at the bottom left.
-3. Click **Advanced** > **Export**.
-4. Enter your password again.
-5. Copy the text and save it as a `.csv` file somewhere on your computer, preferably your `Downloads` folder.
+1\. Go to LastPass.com and login.
+
+2\. Click **More Options** at the bottom left.
+
+3\. Click **Advanced** > **Export**.
+
+4\. Enter your password again.
+
+5\. Copy the text and save it as a `.csv` file somewhere on your computer, preferably your `Downloads` folder.
 
 Now that you've downloaded all your passwords, we can import them using a script.
 
-1. Download the script to your root `~` folder:
+6\. Download the script to your root `~` folder:
 
-    ```bash
-    cd ~/
-    wget https://git.zx2c4.com/password-store/plain/contrib/importers/lastpass2pass.rb
-    ```
+```bash
+cd ~/
+wget https://git.zx2c4.com/password-store/plain/contrib/importers/lastpass2pass.rb
+```
 
-2. Call the script, and enter the destination of your LastPass export file as an argument:
+7\. Call the script, and enter the destination of your LastPass export file as an argument:
 
-    ```bash
-    ./lastpass2pass.rb path/to/passwords_file.csv
-    ```
+```bash
+./lastpass2pass.rb path/to/passwords_file.csv
+```
 
-    For example:
+For example:
 
-    ```bash
-    ./lastpass2pass.rb ~/Downloads/passwords_from_lastpass.csv
-    ```
+```bash
+./lastpass2pass.rb ~/Downloads/passwords_from_lastpass.csv
+```
 
-3. The script should output something like this:
+8\. The script should output something like this:
 
-    ```bash
-    Reading '/home/johnny/Downloads/passwords_from_lastpass.csv'...
-    6 records found!
-    Records parsed: 6
-    ...
-    done!
-    6 records successfully imported!
-    ```
+```bash
+Reading '/home/johnny/Downloads/passwords_from_lastpass.csv'...
+6 records found!
+Records parsed: 6
+...
+done!
+6 records successfully imported!
+```
 
 You should be able to view all those records within `Pass`
 
