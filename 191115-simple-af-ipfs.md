@@ -1,3 +1,9 @@
+---
+
+# THIS POST IS A WORK IN PROGRESS
+
+---
+
 # Making IPFS Simple AF
 
 Storing data in one specific location is stupid. It's the #1 way to get screwed over when the company hosting your data collapses, steals it, gets hacked, or just full on dies. So instead you should store your data on a distributed network that has built in protection against all these issues. 
