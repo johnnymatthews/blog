@@ -1,6 +1,6 @@
 # Creating apps for China (and other oppressed countries)
 
-China is pretty cool. They've got a thriving economy, the world's largest hardware electronics industry, thousands of years of fascinating history, and stunningly beautiful countryside. China is also batshit crazy. The Great Firewall of China is a massive barrier for people inside of the country who want to access sites and apps that the Chinese government doesn't deem appropriate.
+China is pretty cool. They've got a thriving economy, the world's largest hardware electronics industry, thousands of years of fascinating history, and stunningly beautiful countryside. China is also a bit mental at times. The Great Firewall of China is a massive barrier for people inside of the country who want to access sites and apps that the Chinese government doesn't deem appropriate.
 
 Around 1998 China was interacting with the rest of the world after years of isolationism (keeping the countries resources and citizens to itself). Also, around this time, the internet started to become more popular with everyday people. The Chinese government feared that the growth of the internet would cause Chinese citizen to begin questioning their government, and might start a democratic movement within the country. Obviously, the Communist Party of China (the guys in power) were having none of this. So they started a project to protect the political ideologies of China by limiting access to foreign information sources and blocking external internet tools. 
 
