@@ -125,7 +125,7 @@ O
 ```bash
 > gpg: key CA987727 marked as ultimately trusted
 > public and secret key created and signed.
-> 
+>
 > gpg: checking the trustdb
 > gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
 > gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
