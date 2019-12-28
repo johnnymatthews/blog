@@ -3,7 +3,7 @@ title: How to not be Fat
 date: 2019-09-06
 ---
 
-A word of caution, this article contains a fuck-tonne of swear words and mentions evolution and shit. If you're not into that kind of stuff, go ahead and skip this one.
+A word of caution, this article contains a fuck-tonne of swear words and evolution and shit. If you're not into that kind of stuff then you should probably skip this one.
 
 ---
 
@@ -11,7 +11,7 @@ A word of caution, this article contains a fuck-tonne of swear words and mention
 
 1. Skip breakfast.
 2. Lose weight.
-3. Send beer money to say thanks.
+3. Send me beer money.
 
 ## Step one, Eat Less
 
