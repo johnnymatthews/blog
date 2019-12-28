@@ -5,6 +5,10 @@ date: 2019-12-12
 
 ## Create a paper backup of your GPG keys
 
+Having a paper backup of your keys is a great way to make sure you don't lose them. Yeah sure you can store them on digital media like a USB stick or a CD, but there is a chance that the data could get borked. Create a paper copy and store it somewhere safe.
+
+This guide was created for MacOS users. If you're running Linux the steps should be similar, but you'll have to use whichever package manager comes with your distrobution since Homebrew is MacOS specific. Windows users should install Paperkey using the [precompiled binaries](https://www.jabberwocky.com/software/paperkey/).
+
 ### Install Paperkey
 
 You need Paperkey installed to both export and import a paper based key.
@@ -19,6 +23,7 @@ You need Paperkey installed to both export and import a paper based key.
 
     ```bash
     paperkey --version
+
     > paperkey 1.6 (darwin18.6.0)
     > Copyright (C) 2007, 2008, 2009, 2012, 2013, 2016, 2017, 2018 David Shaw <dshaw@jabberwocky.com>
     > This is free software.  You may redistribute copies of it under the terms of
@@ -59,7 +64,7 @@ You need Paperkey installed to both export and import a paper based key.
     > mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj
     ```
 
-3. Your secret key is now stored in `paperkey.txt`. Just print that out.
+3. Your secret key is now stored in `paperkey.txt`. It should look something like this:
 
     ```bash
     cat paperkey.txt
@@ -122,7 +127,7 @@ If you're doing this, make sure the application you'll use to import the secret 
     > Copyright (C) 2006-2017 Kentaro Fukuchi
     ```
 
-3. Export your secret GPG key, pipe the result to Paperkey, and then pipe _that_ result to Qrencode which will then create a QR code in a `secret-key.qr.png` image.
+3. Export your secret GPG key, pipe `|` the result to Paperkey, and then pipe _that_ result to Qrencode. The program will create a QR code image in `secret-key.qr.png`.
 
     ```bash
     gpg --export-secret-key E363354FA81A5AF9334F02EBD6304AF502D93919 | paperkey --output-type raw | qrencode --8bit --output secret-key.qr.png
