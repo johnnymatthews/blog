@@ -1,6 +1,11 @@
-# Create a paper backup of your GPG keys
+---
+title: Create a paper backup of your GPG key
+date: 2019-12-12
+---
 
-## Install Paperkey
+## Create a paper backup of your GPG keys
+
+### Install Paperkey
 
 You need Paperkey installed to both export and import a paper based key.
 
@@ -21,7 +26,7 @@ You need Paperkey installed to both export and import a paper based key.
     > There is NO WARRANTY, to the extent permitted by law.
     ```
 
-## Export a key
+### Export a key
 
 1. List your available secret GPG keys:
 
@@ -96,7 +101,7 @@ You need Paperkey installed to both export and import a paper based key.
 
 4. Print the `paperkey.txt` file and put it somewhere super safe.
 
-### Use a QR Code
+#### Use a QR Code
 
 If you'd prefer to import and export your key to a QR code then you can use [Qrencode](https://formulae.brew.sh/formula/qrencode).
 
@@ -123,7 +128,7 @@ If you're doing this, make sure the application you'll use to import the secret 
     gpg --export-secret-key E363354FA81A5AF9334F02EBD6304AF502D93919 | paperkey --output-type raw | qrencode --8bit --output secret-key.qr.png
     ```
 
-### Public Key
+#### Public Key
 
 When importing the secret key you need to have your public key available. Since it's safe to expose your public key you can store this on a key server. You can also print out your public key.
 
@@ -160,7 +165,7 @@ When importing the secret key you need to have your public key available. Since 
 
 3. You can now go ahead and print the `public-key.txt` file.
 
-## Import a key
+### Import a key
 
 So you've got your keys on paper. Now you need to import it.
 
