@@ -46,7 +46,7 @@ You need Paperkey installed to both export and import a paper based key.
     > ssb   rsa4096 2019-12-12 [E]
     ```
 
-2. Export your key and _pipe_ the result to the Paperkey `--output` command, replacing the `E36335...` _uid_ below with your own. You'll have to enter the password for the key if one was used when the key was created.
+2. Export your key and _pipe_ `|` the result to the Paperkey `--output` command, replacing the `E36335...` _uid_ below with your own. You'll have to enter the password for the key if one was used when the key was created.
 
     ```bash
     gpg --export-secret-key E363354FA81A5AF9334F02EBD6304AF502D93919 | paperkey --output paperkey.txt
@@ -108,9 +108,7 @@ You need Paperkey installed to both export and import a paper based key.
 
 #### Use a QR Code
 
-If you'd prefer to import and export your key to a QR code then you can use [Qrencode](https://formulae.brew.sh/formula/qrencode).
-
-If you're doing this, make sure the application you'll use to import the secret key actually accepts this type of QR code. Not all QR readers are created equal.
+If you'd prefer to import and export your key to a QR code then you can use [QREncode](https://formulae.brew.sh/formula/qrencode). Make sure the application you'll use to import the secret key actually accepts this type of QR code. Not all QR readers are created equal.
 
 1. Install Qrencode:
 
@@ -133,9 +131,11 @@ If you're doing this, make sure the application you'll use to import the secret 
     gpg --export-secret-key E363354FA81A5AF9334F02EBD6304AF502D93919 | paperkey --output-type raw | qrencode --8bit --output secret-key.qr.png
     ```
 
+4. Go ahead and print the `secret-key.qr.png` file.
+
 #### Public Key
 
-When importing the secret key you need to have your public key available. Since it's safe to expose your public key you can store this on a key server. You can also print out your public key.
+When importing the secret key you need to have your public key available. Since it's safe to expose your public key you can store this on a key server. You can also print out your public key. Unfortunately Paperkey doesn't support exporting your public key to a human readable format, so you'll have to print out the key verbatim.
 
 1. List your secret keys:
 
@@ -182,7 +182,7 @@ So you've got your keys on paper. Now you need to import it.
     ```
 
 3. Type out the entire contents of your secret key into a file called `secret-key.txt`.
-4. Use Paperkey to parse your `secret-key.txt` file and pipe the result to the `gpg --import` command:
+4. Use Paperkey to parse your `secret-key.txt` file and _pipe_ `|` the result to the `gpg --import` command:
 
     ```bash
     paperkey --pubring public-key.txt.gpg --secrets secret-key.txt | gpg --import
@@ -193,10 +193,13 @@ So you've got your keys on paper. Now you need to import it.
     > gpg:       secret keys read: 1
     ```
 
-5. Your secret key should now be imported! You should now securly delete the `secret-key.txt` file:
+5. Your secret key should now be imported!
+6. Lastly, delete the `secret-key.txt` file:
 
     ```bash
     echo "This file has been deleted." > secret-key.txt && rm secret-key.txt
     ```
 
-    This command overwrites the secret-key.txt file, and then deletes it. The file does not go into the Trash.
+    This command overwrites the secret-key.txt file, and then deletes it. The file does not go into the Trash. This is by no means to most secure way to delete a file, but it's better than just throwing it in the trash. A motivated attacker could still be able to retrieve your secret key if they had access to your computer.
+
+And there you have it! That's all you need to do to create a paper backup of your GPG keys. Make sure to store your paper backups is a secure place like a lockbox or a safe. It's also a good idea to make two backups and store them in different places, and use the [321 backup strategy](https://en.wikipedia.org/wiki/Backup#Storage).
