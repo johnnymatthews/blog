@@ -1,6 +1,6 @@
 # Access the clipboard in Windows subsystem for Linux
 
-1. Install [Xming](https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.6.0/vcxsrv-64.1.20.6.0.installer.exe/download?use_mirror=astuteinternet&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fvcxsrv%2F&use_mirror=astuteinternet#)
+1. Install [Xming](https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.6.0/vcxsrv-64.1.20.6.0.installer.exe/download?use_mirror=astuteinternet&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fvcxsrv%2F&use_mirror=astuteinternet#).
 1. Create a file called `config.xlaunch`:
 
 	```xml
