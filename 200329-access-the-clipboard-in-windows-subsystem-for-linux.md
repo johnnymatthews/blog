@@ -8,7 +8,12 @@
 	<XLaunch WindowMode="MultiWindow" ClientMode="NoClient" LocalClient="False" Display="-1" LocalProgram="xcalc" RemoteProgram="xterm" RemotePassword="" PrivateKey="" RemoteHost="" RemoteUser="" XDMCPHost="" XDMCPBroadcast="False" XDMCPIndirect="False" Clipboard="True" ClipboardPrimary="True" ExtraParams="" Wgl="True" DisableAC="False" XDMCPTerminate="False"/>
 	```
 
-1. Add `export DISPLAY=localhost:0.0` to the end of WSL's `~/.bashrc`.
+1. Add `export DISPLAY=localhost:0.0` to the end of WSL's `~/.bashrc`:
+
+	```bash
+	echo "export DISPLAY=localhost:0.0" >> ~/.bashrc
+	```
+
 1. Enable the Vim clipboard:
 
 	```bash
