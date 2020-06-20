@@ -29,3 +29,32 @@
 	```
 
 1. That's it!
+
+---
+
+## Troubleshooting
+
+There may be an issue with using WSL 2. If you've done everything above but still can't copy to the keyboard, do this:
+
+1. Open Powershell.
+1. Check your WSL version:
+
+	```bash
+	wsl -l -v
+  
+  	> NAME            STATE           VERSION
+	> * Ubuntu          Running         2
+  	>   Ubuntu-20.04    Stopped         2
+	```
+	
+1. WSL 2 is the problem here. Change it to version 1:
+
+	```bash
+	wsl --set-version Ubuntu 1
+	```
+	
+1. You should now be able to copy your passwords to the clipboard:
+
+	```bash
+	pass -c password
+	```
