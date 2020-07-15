@@ -127,7 +127,48 @@ Now it's time to install the custom rom.
 
 	```bash
 	adb sideload lineage-17.1-jasmine_sprout-signed.zip
+
+    > * daemon not running; starting now at tcp:5037
+    > * daemon started successfully
+    > serving: 'lineage-17.1-20200711-nightly-jasmine_sprout-signed.zip'  (~47%) 
 	```
+
+    You phone outputs where things are up to:
+
+    ```bash
+    Finding update package...
+    Opening update package...
+    Verifiying update package...
+    Update verification package too 48.9 s (result 0)
+    Installing update...
+    Step 1/2
+    Step 2/2
+
+    Install completed with status 0.
+    ```
+
+1. Go back to the main menu.
+1. Select **Advanced** > **Reboot to recovery**.
+1. Once your phone has booted back into the recovery menu select **Apply Update** > **Apply from ADB**.
+1. On your computer sideload the GApps package using ADB:
+
+    ```bash
+
+    ```
+
+    You phone outputs where things are up to:
+
+    ```bash
+    Finding update package...
+    Opening update package...
+    Verifiying update package...
+
+    ...
+    ```
+
+    If you see an error about signatures, select **Yes** when asked if you want to install GApps anyway.
+
+1. Select **Reboot**. Your phone should now boot into LineageOS with the Google Store installed.
 
 ## Troubleshooting
 
