@@ -1,4 +1,4 @@
-# Plasma issue
+# Plasma showing on-screen keyboard at login
 
 I experienced a weird issue with Plasma and Kubuntu (the KDE flavour of Ubuntu) recently. Plasma is the desktop environment that comes default with Kubuntu, and it built by the KDE team. It's pretty nice, and works pretty well. At least, unless you try to uninstall the Clipboard app that comes built-in with Kubuntu.
 
