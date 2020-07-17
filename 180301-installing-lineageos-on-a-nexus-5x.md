@@ -22,7 +22,7 @@ date: 2018-03-01
 
 ## Step 3: Install a Custom Recovery Package using Fastboot
 
-1. Run `add reboot bootloader` in terminal.
+1. Run `adb reboot bootloader` in terminal.
 1. Run `fastboot devices` to verify the computer can find the phone.
 1. Run `~/Downloads
 1. Run `fastboot flash recovery twrp-x.x.x-x-bullhead.img`. Change the file name to reflect the TWRP `.img` file you downloaded in Step 1.
@@ -31,8 +31,8 @@ date: 2018-03-01
 
 ## Step 4: Install LineageOS from Recovery
 
-1. Run `add push filename.zip /sdcard/`. Change the filename to reflect the LineageOS `.zip` file you downloaded in Step 1.
-1. Run `add push filename.zip /sdcard/`. Change the filename to reflect the Google Apps `.zip` file you downloaded in Step 1.
+1. Run `adb push filename.zip /sdcard/`. Change the filename to reflect the LineageOS `.zip` file you downloaded in Step 1.
+1. Run `adb push filename.zip /sdcard/`. Change the filename to reflect the Google Apps `.zip` file you downloaded in Step 1.
 1. On the phone, select **Wipe** and then **Advanced Wipe**.
 1. Select **Cache**, **System**, and **Data**.
 1. Swipe the bar at the bottom of the screen to wipe the partitions.
