@@ -4,8 +4,8 @@
 
 Before we can install anything, we need to get the images that we're going to throw onto our device.
 
-1. Download LineageOS image.
-1. Download Google Apps image.
+1. Download [LineageOS installation `.zip` file](https://download.lineageos.org/jasmine_sprout).
+1. Download the [LineageOS recovery `.img`file](https://download.lineageos.org/jasmine_sprout).
 
 ## ADB and Fastboot
 
@@ -68,6 +68,8 @@ Now that we're in the bootloader, we can start wiping and installing things. Aga
 	fastboot oem unlock
 	fastboot oem unlock_critical
 	```
+
+    Running `unlock_critical` may result in a error saying _you've already unlocked this_, or something like that. That's fine, it just means that the first `unlock` command did everything already.
 
 ## Install recovery image
 
@@ -148,30 +150,14 @@ Now it's time to install the custom rom.
     ```
 
 1. Go back to the main menu.
-1. Select **Advanced** > **Reboot to recovery**.
-1. Once your phone has booted back into the recovery menu select **Apply Update** > **Apply from ADB**.
-1. On your computer sideload the GApps package using ADB:
-
-    ```bash
-
-    ```
-
-    You phone outputs where things are up to:
-
-    ```bash
-    Finding update package...
-    Opening update package...
-    Verifiying update package...
-
-    ...
-    ```
-
-    If you see an error about signatures, select **Yes** when asked if you want to install GApps anyway.
-
-1. Select **Reboot**. Your phone should now boot into LineageOS with the Google Store installed.
+1. Select **Reboot**. Your phone should now boot into LineageOS.
 
 ## Troubleshooting
 
 ### Commands don't do anything
 
 This might have something to do with how your phone is connected to your computer. USB-C seems to be a bit flakey. I connected my phone to a USB-C hub using a USB-C to USB-A cable. That seemed to work.
+
+### Installing Open Apps (GApps)
+
+Annoyingly, there's currently no way to install GApps without rooting your phone.
