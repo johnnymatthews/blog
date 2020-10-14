@@ -15,7 +15,7 @@ Time to jump back down the rabbit hole.
 
 My first port of call was to email the company [Epidemic Sound](https://www.epidemicsound.com/) to see if they could give me any information. From the looks of things, they're a content distribution company based out of Stockholm. I think they act as an intermediary between content creators (musicians in this case) and people who want to use their music. You can search for music based on its genre, mood, and movement, along with a bunch of other filters.
 
-![The search feature on Epidemic Sounds' website.](media/191031-the-search-for-sunrise-part-three/epidenicsound-search-page.png)
+![The search feature on Epidemic Sounds' website.](../media/191031-the-search-for-sunrise-part-three/epidenicsound-search-page.png)
 
 If you're wondering, Maree Docia's _At Last, Sunrise_ fits into the following categories:
 

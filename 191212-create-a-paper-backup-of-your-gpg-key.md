@@ -1,9 +1,8 @@
 ---
 title: Create a paper backup of your GPG key
+description: Having a paper backup of your keys is a great way to make sure you don't lose them. Yeah, you can store them on digital media like a USB stick or a CD, but there is a chance that the data could get borked. Create a paper copy and store it somewhere safe.
 date: 2019-12-12
 ---
-
-## Create a paper backup of your GPG keys
 
 Having a paper backup of your keys is a great way to make sure you don't lose them. Yeah, you can store them on digital media like a USB stick or a CD, but there is a chance that the data could get borked. Create a paper copy and store it somewhere safe.
 

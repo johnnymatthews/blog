@@ -1,9 +1,9 @@
 ---
-title: How to not be Fat
+title: How to not be fat
 date: 2019-09-06
 ---
 
-A word of caution, this article contains a fuck-tonne of swear words and evolution and shit. If you're not into that kind of stuff then you should probably skip this one.
+A word of caution, this article contains a fuck-load of swear words and evolution and shit. If you're not into that kind of stuff then you should probably skip this one.
 
 ---
 
@@ -13,7 +13,7 @@ A word of caution, this article contains a fuck-tonne of swear words and evoluti
 2. Lose weight.
 3. Send me beer money.
 
-## Step one, Eat Less
+## Step one, eat less
 
 There's a lot of bullshit around when it comes to losing weight. There's this idea that you need to eat particular foods, or only eat green stuff, or live like a caveman to be healthy. It's all utter crap. The only rule you need to follow when trying to lose weight is this:
 
