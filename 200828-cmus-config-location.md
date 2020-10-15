@@ -1,6 +1,6 @@
 ---
 title: CMUS config location
-description: CMUS is an incredibly simple music and media player that runs straight from the terminal. However, sometimes it can be tricky to customize and interact with. In this post I'll quickly jump into where the config files for CMUS are, and how to edit them.
+description: CMUS is an incredibly simple music and media player that runs straight from the terminal. However, sometimes it can be tricky to customize and interact with. In this post, I'll quickly jump into where the config files for CMUS are and how to edit them.
 date: 2020-08-28
 ---
 
@@ -12,8 +12,8 @@ So there isn't a `.config` file for CMUS. But there _is_ a `cmus` folder within 
 ├── command-history
 ├── lib.pl
 ├── playlists
-│   ├── Aggressive alectro
-│    ...
+│   ├── Aggressive alectro
+│    ...
 ├── search-history
 └── update-library.sh
 ```
