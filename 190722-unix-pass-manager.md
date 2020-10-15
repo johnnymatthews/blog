@@ -1,9 +1,10 @@
 ---
 title: Terminal Based Password Manager
+description: Password managers are great. Services like Lastpass, 1Password, and Dashlane are a great jumping off point for improving your online security.  It's just that they're not the end-all be-all of password management, and they suffer from a lot of the vulnerabilities that other onlines services do.
 date: 2019-07-22
 ---
 
-Password managers are great. Services like Lastpass, 1Password, and Dashlane are a great jumping off point for improving your online security.  It's just that they're not the end-all be-all of password management, and they suffer from a lot of the vulnerabilities that other onlines services do. In 2017 there was a bug in the Lastpass browser plugin that [exposed passwords in plain text](https://www.engadget.com/2017/03/22/critical-exploits-found-in-lastpass-on-chrome-firefox/). Stuff like this is super bad, and can be exploited by attackers to get access to all your stuff.
+In 2017 there was a bug in the Lastpass browser plugin that [exposed passwords in plain text](https://www.engadget.com/2017/03/22/critical-exploits-found-in-lastpass-on-chrome-firefox/). Stuff like this is super bad, and can be exploited by attackers to get access to all your stuff.
 
 So today we're going to walk through [Pass: the Unix Password Manager](https://www.passwordstore.org/). Essentially, Pass does all the same things that Lastpass and 1Password and Dashlane do, but locally on your machine. Your passwords are encrypted using a GPG key and stored in a repository. Only instead of an online service holding all your data, you're in charge of it.
 

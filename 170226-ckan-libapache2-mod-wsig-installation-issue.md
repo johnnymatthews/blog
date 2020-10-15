@@ -1,9 +1,10 @@
 ---
 title: CKAN Lib Apache Installation Issue
+description: CKAN relies on libapache2-mod-wsgi to run various bits and bobs. Unfortunately for me I've ran into an issue.
 date: 2017-02-26
 ---
 
-So CKAN relies on `libapache2-mod-wsgi` to run various bits and bobs. Unfortunately for me I've ran into an issue. Attempting to install `libapache2-mod-wsgi` inside a Scotchbox Vagrant VM gives me the following error:
+Attempting to install `libapache2-mod-wsgi` inside a Scotchbox Vagrant VM gives me the following error:
 
 ```bash
 WARNING: The following packages cannot be authenticated!

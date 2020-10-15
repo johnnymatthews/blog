@@ -1,9 +1,8 @@
 ---
 title: Dealing with Clean URLs, or How I Learned how to Interpret Recline JS Errors
+description: This week I ran into an issue with clean URLs (essentially an SEO friendly URL, so no question marks, equals signs, etc) in DKAN. I stumbled onto this while attempting to fix an issue with the DKAN datastore. 
 date: 2017-07-20
 ---
-
-This week I ran into an issue with *clean URLs* (essentially an SEO friendly URL, so no question marks, equals signs, etc) in DKAN. I stumbled onto this while attempting to fix an issue with the DKAN datastore. 
 
 ## The Problem
 

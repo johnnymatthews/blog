@@ -1,9 +1,10 @@
 ---
 title: Installing DKAN
+description: In this guide I'm going to _very quickly_ run you through how to install DKAN on a Ubuntu 16.04 server.
 date: 2017-03-02
 ---
 
-In this guide I'm going to _very quickly_ run you through how to install DKAN on a Ubuntu 16.04 server. If you're connecting to a remote server, you'll want to connect over SSH: `ssh user@something.com`.
+If you're connecting to a remote server, you'll want to connect over SSH: `ssh user@something.com`.
 
 ## Drupal and DKAN
 

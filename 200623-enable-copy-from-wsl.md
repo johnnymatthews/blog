@@ -1,4 +1,8 @@
-# Unix Pass on Windows Subsystem for Linux
+---
+title: Unix Pass on Windows Subsystem for Linux
+description: All good programmers use the terminal for literally everything, so you should use the Unix Pass manager to manage your passwords. And since Windows 10 has the ability to use Linux apps through the Windows Subsystem for Linux (WSL), you should install it and be the envy of all your nerd friends.
+date: 2020-06-23
+--- 
 
 ## Run Ubuntu
 

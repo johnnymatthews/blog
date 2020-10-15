@@ -1,6 +1,10 @@
-# Rsync files to Android
+---
+title: Rsync files to Android
+description: Rsync is a super handy utility that makes synchronising files between two systems incredibly simple. Unfortuantaly, Android doesn't allow users to use this utility straight out of the box. This post discusses why the restrictions exist, and how to ger around them using adb-sync.
+date: 2020-07-17
+---
 
-Rsync is a super handy utility that makes synchronising files between two systems incredibly simple. Unfortuantaly, Android doesn't allow users to use this utility straight out of the box. This restriction has something to do with how Android is mounted when connected to a computer via USB. It's not actually a full file system, but uses media transfer protocol (MTP). MTP is _ok_, but can cause issues when transfering a large amount of data. For instance, I want to copy over my entire music library from my laptop to my phone. It's about 30GB, and MTP can sometimes crash about halfway through.
+This restriction has something to do with how Android is mounted when connected to a computer over USB. It's not actually a full file system, but uses media transfer protocol (MTP). MTP is ok, but can cause issues when transfering a large amount of data. For instance, I want to copy over my entire music library from my laptop to my phone. It's about 30GB, and MTP can sometimes crash about halfway through.
 
 Annoyingly, to get Rsync to run natively on your Android you need to root the phone. There's a pros and cons to rooting a phone, but one major con is that it's a long and laborious task that I can't be bothered doing.
 

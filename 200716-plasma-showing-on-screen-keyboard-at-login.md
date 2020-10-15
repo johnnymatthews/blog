@@ -1,6 +1,8 @@
-# Plasma showing on-screen keyboard at login
-
-I experienced a weird issue with Plasma and Kubuntu (the KDE flavour of Ubuntu) recently. Plasma is the desktop environment that comes default with Kubuntu, and it built by the KDE team. It's pretty nice, and works pretty well. At least, unless you try to uninstall the Clipboard app that comes built-in with Kubuntu.
+---
+title: Plasma showing on-screen keyboard at login
+description: I experienced a weird issue with Plasma and Kubuntu (the KDE flavour of Ubuntu) recently. Plasma is the desktop environment that comes default with Kubuntu, and it built by the KDE team. It's pretty nice, and works pretty well. At least, unless you try to uninstall the Clipboard app that comes built-in with Kubuntu.
+date: 2020-07-16
+---
 
 The clipboard app just keeps a record of everything that's been in your clipboard. A fairly useful utility, unless you copy your passwords to clipboard using a password manager. So, to mitigate security issues I decided to get rid of the clipboard app. I used Kubuntu's built in software center _Discover_, clicked **Installed** and scrolled down until I found **KDE Plasma Desktop - Clipboard**. Then I clicked **Remove** and carried on with my day.
 
@@ -28,3 +30,5 @@ Then I removed `plasma-desktop-data` installed `plasma-desktop`:
 	```
 
 After that I did a quick reboot I found that it fixed most things. The on-screen keyboard popped up, but I was able to minimize it and login. Once I was in, everything looked the same. Tool bars were in the same place, touchpad settings still worked, all that stuff.
+
+Nice!

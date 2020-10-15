@@ -1,4 +1,8 @@
-# Access the clipboard in Windows subsystem for Linux
+---
+title: Access the clipboard in Windows subsystem for Linux
+description: Using the clipboard from with the Windows Subsystem for Linux (WSL) sounds like a very niche thing to do. But if you're using the Unix Pass password manager, like I do, then it's absolutely necessary. This post briefly goes over how to enable the clipboard, and some issues you might run into.
+date: 2020-03-29
+---
 
 1. Install [Xming](https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.6.0/vcxsrv-64.1.20.6.0.installer.exe/download?use_mirror=astuteinternet&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fvcxsrv%2F&use_mirror=astuteinternet#).
 1. Create a file called `config.xlaunch`:

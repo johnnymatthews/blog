@@ -1,5 +1,6 @@
 ---
-title: Customising DKAN's Global Search Bar
+title: Customising DKAN's global search bar
+description: DKAN is an open-source tool for managing and displaying large public data sets like census data, or weather patterns. It can be a bit tricky to customise, so this post details my exploration into how to configure the global search bar within DKAN.
 date: 2017-08-26
 ---
 

@@ -1,9 +1,8 @@
 ---
 title: Create an Encrypted Zip File on MacOS
+description: This guide will quickly walk you through how to create an encrypted zip file on a Mac. Since macOS and Linux systems have a lot in common, this will likely work on any Linux distributions too.
 date: 2018-05-09
 ---
-
-This guide will quickly walk you through how to create an encrypted `,zip` file on a Mac. Since MacOS and Linux systems have a lot in common, this will likely work on any Linux distributions too.
 
 1. Move the files you want to compress and encrypt to your Desktop.
 2. Open Terminal by pressing `CMD` + `SPACE` and searching for **Terminal** in the search window that pops up.

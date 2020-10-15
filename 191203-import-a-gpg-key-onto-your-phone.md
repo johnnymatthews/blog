@@ -1,9 +1,8 @@
 ---
 title: Import a GPG key onto your phone
+description: GPG keys are a super secure way to encrypt your stuff. If you're an idiot like me and use Unix Pass everywhere, including on your phone, you'll need to import your GPG key from your PC to your phone. So this post goes over how to import a GPG key onto your phone, if not very briefly.
 date: 2019-12-03
 ---
-
-<!-- THIS POST IS A WORK IN PROGRESS -->
 
 ## Import a GPG key onto your phone
 

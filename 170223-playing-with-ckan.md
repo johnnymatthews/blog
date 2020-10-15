@@ -1,5 +1,6 @@
 ---
 title: Playing with CKAN
+description: This post covers how to build and run CKAN from source, just incase you're not a fan of using pre-build binaries.
 date: 2017-02-23
 ---
 

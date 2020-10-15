@@ -1,5 +1,6 @@
 ---
-title: How to Disable Middle Mouse Button Paste in Ubuntu
+title: How to disable middle mouse button paste in Ubuntu
+description: For some reason, clicking the middle mouse button in Ubuntu will paste whatever you have copied to your clipboard. I don't like this. So, here's how to disable that feature, since there isn't an easy way to disable this feature through Ubuntu settings. Fun.
 date: 2017-07-30
 ---
 

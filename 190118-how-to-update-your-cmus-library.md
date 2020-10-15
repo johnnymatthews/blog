@@ -1,9 +1,8 @@
 ---
 title: How to Update your CMUS Library
+description: CMUS is a fantastically simple music player for Unix systems. It just runs in the terminal and requires hardly any memory to run! This low memory requirement is actually why I go onto using it in the first place. Between Chrome, Slack, and VSCode, I don't have much memory left to go around in my 8gb MacBook.
 date: 2018-05-09
 ---
-
-CMUS is a fantastically simple music player for Unix systems. It just runs in the terminal and requires hardly any memory to run! This low memory requirement is actually why I go onto using it in the first place. Between Chrome, Slack, and VSCode, I don't have much memory left to go around in my 8GB MacBook.
 
 I often find myself updating my music library, which can cause CMUS to go out sync. So I began looking for a solution to help me update the CMUS cache on the fly! I found a post on [Github by c0llision](https://github.com/cmus/cmus/issues/233#issuecomment-396195503) that guided me to the script below!
 

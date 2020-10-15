@@ -1,9 +1,8 @@
 ---
 title: My Shockingly Un-scientific Study of Chrome and Firefox
+description: So a new Firefox version came out a few weeks ago. Everyone's been claiming that it's super fast and has overcome it's sluggish past. There's even been some journalists saying it's faster as less resource heavy than Chrome. I wanted to find out for myself, so I did a few tests.
 date: 2018-01-02
 ---
-
-So a new Firefox version came out a few weeks ago. Everyone's been claiming that it's super fast and has overcome it's sluggish past. There's even been some journalists saying it's faster as less resource heavy than Chrome. I wanted to find out for myself, so I did a few tests.
 
 Everything in this *study* was performed on the same 2016 Macbook Air (8GB), and on the same WiFi network, in the same geographical space (my desk). Chrome is updated to version 62.0.3202.94 (Official Build) (64-bit), and Firefox is at 57.0 (64-bit).
 

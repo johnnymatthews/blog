@@ -1,7 +1,7 @@
 ---
 title: Create a Server Environment for DKAN
+description: DKAN is an open-source tool for managing and displaying large public data sets like census data, or weather patterns. This post runs through how to set up DKAN on a LAMP stack.
 date: 2017-05-02
-tags: lamp, webdev, server, linux, apache, php, dkan
 ---
 
 ## Creating the Server Environment

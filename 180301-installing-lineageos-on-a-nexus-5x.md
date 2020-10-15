@@ -1,15 +1,16 @@
 ---
-title: Installing LineageOS on Nexus 5X from OSX
+title: Installing LineageOS on Nexus 5X from macOS
+description: Bored of the standard Android OS on your Nexus 5X? You might be interested in installing LineageOS, a free and open-source operating system for various devices based on the Android mobile platform. I created this post partly as a guide, and partly as a reminder for when I need to do this again in three months.
 date: 2018-03-01
 ---
 
-## Step 1: Prerequisite Downloads
+## Prerequisite downloads
 
 1. Download [TWRP](https://dl.twrp.me/bullhead/) to your Downloads folder.
 2. Download LineageOS package  to your Downloads folder.
 3. Download Google Apps (arm64 version) to your Downloads folder.
 
-## Step 2: Unlock the Bootloader
+## Unlock the bootloader
 
 1. Enable USB debugging on phone.
 1. Toggle OEM Unlock on phone.
@@ -20,7 +21,7 @@ date: 2018-03-01
 1. Run `fastboot devices` to verify the computer can find the phone.
 1. Run `fastboot flashing unlock` in terminal.
 
-## Step 3: Install a Custom Recovery Package using Fastboot
+## Install a custom recovery package using fastboot
 
 1. Run `adb reboot bootloader` in terminal.
 1. Run `fastboot devices` to verify the computer can find the phone.
@@ -29,7 +30,7 @@ date: 2018-03-01
 1. Turn the phone off.
 1. Hold the `Volume Down` and `Power` buttons down until you see the fastboot menu.
 
-## Step 4: Install LineageOS from Recovery
+## Install LineageOS from recovery
 
 1. Run `adb push filename.zip /sdcard/`. Change the filename to reflect the LineageOS `.zip` file you downloaded in Step 1.
 1. Run `adb push filename.zip /sdcard/`. Change the filename to reflect the Google Apps `.zip` file you downloaded in Step 1.

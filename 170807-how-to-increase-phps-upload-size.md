@@ -1,9 +1,8 @@
 ---
-title: How to Increase PHPs Upload Size
+title: How to increase PHPs upload size
+description: So, for some reason PHP's default upload size is only 2MB. This might have been large enough for most files way back in the day, but these days it's barely enough to move a .doc file around. Here's how to change it to whatever you like.
 date: 2017-08-07
 ---
-
-So, for some reason PHP's default upload size is only 2MB. This might have been large enough for most files way back in the day, but these days it's barely enough to move a .doc file around. Here's how to change it to whatever you like.
 
 Use the [Quick Reference](quick-reference) steps if you already know what you're doing, and just need to copy the commands.
 

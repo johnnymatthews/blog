@@ -1,13 +1,10 @@
 ---
 title: The Search for Sunrise, Part Three
+description: This has been a long time coming. I'd like to say it's because of life-stuff, just things getting in the way. Since I wrote the original post back in 2017 (posted to Medium in 2018), I've changed jobs, moved house, moved house again, moved countries, got a house, got a new job, and now I'm moving house again. But the story about Maree Docia hasn't really changed. Until seven days ago.
 date: 2019-10-31
 ---
 
-My god, this has been a long time coming. I'd like to say it's because of _life-stuff_, just things getting in the way. Since I wrote the original post back in 2017 (posted to Medium in 2018), I've changed jobs, moved house, moved house again, moved countries, got a house, got a new job, and now I'm moving house again. But the story about Maree Docia hasn't really changed.
-
-Until seven days ago.
-
-The Search for Maree Docia series is without a doubt my most popular on Medium. Maybe it's because this story is enthralling and everyone really wants to know who she is! Or maybe it's because all my other posts are about very niche programming-related topics. Either way, a commenter by the name of [`t_w_t`](https://medium.com/@t_w_t/looks-like-the-music-is-copyrighted-by-epidemic-sound-5ddd09524137) revitalized the search:
+The Search for Maree Docia series is without a doubt my most popular post. Maybe it's because this story is enthralling and everyone really wants to know who she is! Or maybe it's because all my other posts are about very niche programming-related topics. Either way, a commenter by the name of [`t_w_t`](https://medium.com/@t_w_t/looks-like-the-music-is-copyrighted-by-epidemic-sound-5ddd09524137) revitalized the search:
 
 > Looks like the music is copyrighted by Epidemic Sound.
 

@@ -1,11 +1,10 @@
 ---
 title: Creating a Backup and Restore Procedure
+description: We're going to quickly run through how to set up a backup and restore procedure for your DKAN installation.
 date: 2017-04-25
 ---
 
-We're going to quickly run through how to set up a backup and restore procedure for you [DKAN](https://getdkan.org/) installation.
-
-## Installing the Prerequisites
+## Prerequisites
 
 ### Composer
 

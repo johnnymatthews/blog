@@ -1,9 +1,10 @@
 ---
 title: Writing Lit AF Docs
+description: Writing docs is easy. It's just a bunch of words strung together into sentences, which in turn make paragraphs. But writing docs that are so lit that they make your parents actually proud of you, that's hard to do. But fear not!
 date: 2019-10-09
 ---
 
-Writing docs is easy. It's just a bunch of words strung together into sentences, which in turn make paragraphs. But writing docs that are so lit that they make your parents actually proud of you, that's hard to do. But fear not! There are only about 5 things that you need to do to become a documentation-god and finally have the approval of your shockingly distant parents:
+There are only about 5 things that you need to do to become a documentation-god and finally have the approval of your shockingly distant parents:
 
 1. Plan
 2. Write

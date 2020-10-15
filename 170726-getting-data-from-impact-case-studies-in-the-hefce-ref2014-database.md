@@ -1,5 +1,6 @@
 ---
 title: Getting Data from Impact Case Studies in HEFCE’s REF2014 database
+description: This post dives into how I grabbed some fancy data out of a very old, and fairly inaccessible, dataset.
 date: 2017-07-26
 ---
 

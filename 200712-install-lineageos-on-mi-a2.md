@@ -1,4 +1,8 @@
-# Install LineageOS on Mi A2
+---
+title: Install LineageOS on Mi A2
+description: Bored of the standard Android OS on your Xiaomi Mi A2? You might be interested in installing LineageOS, a free and open-source operating system for various devices based on the Android mobile platform. I created this post partly as a guide, and partly as a reminder for when I need to do this again in three months.
+date: 2020-07-12
+---
 
 ## Download images
 

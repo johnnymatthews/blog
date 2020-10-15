@@ -1,5 +1,6 @@
 ---
 title: The Search for Sunrise - Part Two 
+description: This is the second part in my never ending quest to prove that Maree Docia probably doesn't actually exist. To catch you up, Maree Docia is an artist on Spotify with a few popular tracks. However, outside of Spotify, there is no mention of Maree Docia out in the wild. This series of posts attempts to find out what's going on.
 date: 2017-08-29
 ---
 
