@@ -1,7 +1,6 @@
 ---
 title: Link your Documents Folder to Google Drive on OSX
 description: Windows has this pretty handy feature where you can turn folders into links to other directories. For example, instead of your Documents folder existing in C:/Users/Me/Documents you could have it point to C:/Users/Me/Google Drive/Documents. That way you can just interact with your Documents folder like you normally do, but be safe in the knowledge that everything is being backed up.
-
 date: 2017-11-16
 ---
 
