@@ -1,6 +1,6 @@
 ---
 title: Playing with CKAN
-description: This post covers how to build and run CKAN from source, just incase you're not a fan of using pre-build binaries.
+description: This post covers how to build and run CKAN from source, in case you're not a fan of using pre-built binaries.
 date: 2017-02-23
 ---
 
@@ -8,13 +8,13 @@ You probably already know what CKAN is, so there's really no point in me explain
 
 ## Dependencies
 
-First step is to install the required dependencies. The following command was taken from the [CKAN docs](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html)
+The first step is to install the required dependencies. The following command was taken from the [CKAN docs](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html)
 
 ```bash
 sudo apt-get install python-dev postgresql libpq-dev python-pip python-virtualenv git-core solr-jetty openjdk-6-jdk redis-server
 ```
 
-There's a couple of things we need to fix here though. First, `openjdk-6-jdk` isn't a thing anymore, so we're gonna install `openjdk-9-jdk` instead. Secondly, we need to grab `virtualenv` as well. So the above command should actually look like this:
+There's a couple of things we need to fix here, though. First, `openjdk-6-jdk` isn't a thing anymore, so we're gonna install `openjdk-9-jdk` instead. Secondly, we need to grab `virtualenv` as well. So the above command should actually look like this:
 
 ```bash
 sudo apt-get install python-dev postgresql libpq-dev python-pip python-virtualenv git-core solr-jetty openjdk-9-jdk redis-server virtualenv
@@ -22,7 +22,7 @@ sudo apt-get install python-dev postgresql libpq-dev python-pip python-virtualen
 
 ## Symlink
 
-The [docs](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html) suggest creating a symlink the directories used in the docs to my home folder, making it easier to copy and paste in example commands and all that stuff. Sounds like a sensible suggestion, symlink it is.
+The [docs](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html) suggest creating a symlink the directories used in the docs to my home folder, making it easier to copy and paste in example commands and all that stuff. It sounds like a sensible suggestion, symlink it is.
 
 ```bash
 mkdir -p ~/ckan/lib
@@ -55,13 +55,13 @@ So if your machine reboots or shutdown or sets on fire or whatever, just run `. 
 
 ## Install the CKAN Source Code
 
-To install the latest stable release of CKAN (currently 2.6.1) run:
+To install the latest stable release of CKAN (currently 2.6.1), run:
 
 ```bash
 pip install -e 'git+https://github.com/ckan/ckan.git@ckan-2.6.1#egg=ckan'
 ```
 
-Anoyingly there isn't anyway of finding out which is the latest and most stable version, we just have to rely on [the docs](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html). So if you're reading this a month or so after the published date, take a look at the [official CKAN documentation](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html) to see is 2.6.1 is still the latest version.
+Annoyingly there isn't any way of finding out which is the latest and most stable version; we just have to rely on [the docs](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html). So if you're reading this a month or so after the published date, take a look at the [official CKAN documentation](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html) to see is 2.6.1 is still the latest version.
 
 ## Python Modules
 
@@ -71,7 +71,7 @@ We need to install the following Python modules that CKAN uses. These are instal
 pip install -r /usr/lib/ckan/default/src/ckan/requirements.txt
 ```
 
-I had an issue here were python couldn't find `pg_config`.
+I had an issue here where python couldn't find `pg_config`.
 
 ```bash
 writing pip-egg-info/psycopg2.egg-info/PKG-INFO
@@ -97,7 +97,7 @@ python setup.py build_ext --pg-config /path/to/pg_config build ...
 sudo apt-get install libpq-dev python-dev
 ```
 
-If you run into further problems here, it could be that you're using an older version of CKAN. Previous to v2.1 the requirements file was called `pip-requirements.txt`, and not `requirements.txt`. Try running the below command if you're having issues:
+If you run into further problems here, it could be that you're using an older version of CKAN. Previous to v2.1, the requirements file was called `pip-requirements.txt` and not `requirements.txt`. Try running the below command if you're having issues:
 
 ```bash
 pip install -r /usr/lib/ckan/default/src/ckan/pip-requirements.txt
@@ -105,7 +105,7 @@ pip install -r /usr/lib/ckan/default/src/ckan/pip-requirements.txt
 
 ## Reboot the Virtual Environment
 
-To make sure everything's working all fine and dandy we need to deactivate and reactivate your virtual environment. This way we can make sure that we're using the virtual environment's copies of commands like `paster` rather than the system-wide copies.
+To make sure everything's working fine and dandy, we need to deactivate and reactivate your virtual environment. This way, we can make sure that we're using the virtual environment's copies of commands like `paster` rather than the system-wide copies.
 
 ```bash
 deactivate
@@ -127,13 +127,13 @@ Now just load everything back up with:
 
 Regardless of how you pronounce it, we have to install PostgreSQL. It's fairly easy, only a few commands to run.
 
-First we should check that it's actually been installed properly.
+First, we should check that it's actually been installed properly.
 
 ```bash
 sudo -u postgres psql -l
 ```
 
-If you get something like `sudo: unknown user: postgresql` then PostgreSQL probably didn't install properly. Run: `sudo apt-get install postgresql` to fix that.
+If you get something like `sudo: unknown user: postgresql`, then PostgreSQL probably didn't install properly. Run: `sudo apt-get install postgresql` to fix that.
 
 Once that's all taken care off run:
 
@@ -141,7 +141,7 @@ Once that's all taken care off run:
 sudo -u postgres psql -l
 ```
 
-You might have to input your password, and even then you might get something that says permission denided. However as long as you end up with something looking like a table then you're ok:
+You might have to input your password, and even then, you might get something that says permission denied. However, as long as you end up with something looking like a table, then you're ok:
 
 ```text
 Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
@@ -162,9 +162,9 @@ Now we're gonna try and create the PostgreSQL database and all that business. Le
 sudo -u postgres createuser -S -D -R -P ckan_default
 ```
 
-You'll be asked to enter a password, and then one again to confirm you typed it all correctly. You'll probably want to write this down somewhere, it's going to become useful later.
+You'll be asked to enter a password and then one again to confirm you typed it all correctly. You'll probably want to write this down somewhere, it's going to become useful later.
 
-Next we're going to create a new database called `ckan_default`, which will be owned by the user we just created in the last command.
+Next, we're going to create a new database called `ckan_default`, which will be owned by the user we just created in the last command.
 
 ```bash
 sudo -u postgres createdb -O ckan_default ckan_default -E utf-8
@@ -172,22 +172,22 @@ sudo -u postgres createdb -O ckan_default ckan_default -E utf-8
 
 ## CKAN Config File
 
-So CKAN uses a config file to help set itself up and run all it's crap. It's really simple to make, but kinda catastrophic if you mess it up so pay attention.
+So CKAN uses a config file to help set itself up and run all it's crap. It's straightforward to make but somewhat catastrophic if you mess it up, so pay attention.
 
-Start off by making a directory that gonna contain all the config files;
+Start by making a directory that will gonna contain all the config files;
 
 ```bash
 sudo mkdir -p /etc/ckan/default
 ```
 
-Then go ahead and `chmod` them so that their permissions are set properly and we don't have to `sudo` everywhere:
+Then go ahead and `chmod` them so that their permissions are set properly, and we don't have to `sudo` everywhere:
 
 ```bash
 sudo chown -R `whoami` /etc/ckan/
 sudo chown -R `whoami` ~/ckan/etc
 ```
 
-Once that's all done make the CKAN config file itself:
+Once that's all done, make the CKAN config file itself:
 
 ```bash
 paster make-config ckan /etc/ckan/default/development.ini
@@ -195,7 +195,7 @@ paster make-config ckan /etc/ckan/default/development.ini
 
 ## Editing the Config File
 
-We've now made the file and given it the correct permissions, but now we need to actually fill it with the options we'll be using down the road.
+We've now made the file and given it the correct permissions, but now we need to fill it with the options we'll use down the road.
 
 Edit the development.ini file in a text editor (Nano, Vim, Emacs, doesn't matter which one - they all do the same thing) and make the following changes:
 
@@ -210,35 +210,35 @@ Each CKAN site should have a unique site_id. Just set it to `ckan.site_id = defa
 
 ### Site URL
 
-The same goes for the url. This is used when putting links to the site into the FileStore, notification emails, etc. For now use `ckan.site_url = http://demo.ckan.org`
+The same goes for the URL. This is used when putting links to the site into the FileStore, notification emails, etc. For now, use `ckan.site_url = http://demo.ckan.org`
 
 There's no need to add a trailing slash onto the URL here.
 
 ## Solr
 
-CKAN uses Solr as its search platform, and uses a customized Solr schema file that takes into account CKAN’s specific search needs. Now that we have CKAN installed and all set up, we need to install Solr.
+CKAN uses Solr as its search platform and uses a customized Solr schema file that considers CKAN's specific search needs. Now that we have CKAN installed and all set up, we need to install Solr.
 
-I'm not going to go into how to install Solr here, since it varies massively depending on your OS. Use the [Solr docs](http://lucene.apache.org/solr/resources.html) to guide you to where you need to go.
+I'm not going to go into how to install Solr here since it varies massively depending on your OS. Use the [Solr docs](http://lucene.apache.org/solr/resources.html) to guide you to where you need to go.
 
 ## Flip Some Tables
 
-It's time to actually start dealing with tables and exciting database things.:
+It's time to start dealing with tables and exciting database things:
 
 ```bash
 cd /usr/lib/ckan/default/src/ckan
 paster db init -c /etc/ckan/default/development.ini
 ```
 
-if that worked then you should see `Initialising DB: SUCCESS`.
+If that worked, then you should see `Initialising DB: SUCCESS`.
 
-If the above command asks for a password then you probably haven't set up the sqlalchemy.url option in your CKAN config file. Go back up to [Step 9](#step-9-editing-the-config-file) and follow that section through again. If you're still having problems then check out the [CKAN docs on config files](//docs.ckan.org/en/latest/maintaining/configuration.html).
+If the above command asks for a password, you probably haven't set up the `sqlalchemy.url` option in your CKAN config file. Go back up to [Step 9](#step-9-editing-the-config-file) and follow that section through again. If you're still having problems, check out the [CKAN docs on config files](//docs.ckan.org/en/latest/maintaining/configuration.html).
 
 ## The Datastore
 
-Funnily enough the Datastore is not a shop where you can buy your data. This is an optional step, so it you want to learn more about it read up on the [CKAN docs](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html#set-up-the-datastore)
+Funnily enough, the Datastore is not a shop where you can buy your data. This is an optional step. If you want to learn more about it, read up on the [CKAN docs](http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html#set-up-the-datastore)
 
 ## Who
-No, this has nothing to do with the band [The Who](https://www.youtube.com/watch?v=8c1hYO_BYHY). It's an initilization file that needs to be accessible in the same directory as your CKAN config file. The easiest way to achieve this is to create a symlink to it:
+No, this has nothing to do with the band [The Who](https://www.youtube.com/watch?v=8c1hYO_BYHY). It's an initialization file that needs to be accessible in the same directory as your CKAN config file. The easiest way to achieve this is to create a symlink to it:
 
 ```bash
 ln -s /usr/lib/ckan/default/src/ckan/who.ini /etc/ckan/default/who.ini
@@ -255,4 +255,4 @@ cd /usr/lib/ckan/default/src/ckan
 paster serve /etc/ckan/default/development.ini
 ```
 
-You should probably run [CKAN's tests](http://docs.ckan.org/en/latest/contributing/test.html) just to make sure that everything is working.
+You should probably run [CKAN's tests](http://docs.ckan.org/en/latest/contributing/test.html) to make sure that everything is working.
