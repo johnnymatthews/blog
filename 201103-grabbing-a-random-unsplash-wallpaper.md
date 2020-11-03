@@ -39,7 +39,7 @@ Now that we've got out access keys set up, we can actually start creating the sc
 #!/bin/sh
 # Download a random photo from Unsplash using the 'Nature' tag and set it as the desktop background.
 
-wget -O /tmp/Wallpaper.jpg $(curl -s 'https://api.unsplash.com/photos/random?query=nature&count=1&client_id=F4xG20ijeLycO5O0rXNUfc1Dv8HFkPPNwXBVDiabK8w' | jq -r '.[0].urls.regular')
+wget -O /tmp/wallpaper.jpg $(curl -s 'https://api.unsplash.com/photos/random?query=nature&count=1&client_id=F4xG20ijeLycO5O0rXNUfc1Dv8HFkPPNwXBVDiabK8w' | jq -r '.[0].urls.regular')
 gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
 ```
 
@@ -59,7 +59,7 @@ Let's go through it line by line.
 
     | Thing | Description |
     | ----- | ----------- |
-    | `wget -O /tmp/Wallpaper.jpg` | Download _something_ from the internet and save it as `Wallpaper.jpg` in the `/tmp/` directory. More about this in the [notes](#notes). |
+    | `wget -O /tmp/wallpaper.jpg` | Download _something_ from the internet and save it as `Wallpaper.jpg` in the `/tmp/` directory. More about this in the [notes](#notes). |
     | `$(` | Run everything between the parentheses `()` out output the result right here.  |
     | `curl -s` | Curl is a program that grabs data from the internet. It's like visiting a website in a browser, except the data is sent to your terminal instead of a browser window. The `-s` tag signifies that we want this process to be _silent_. Without the `-s` tag, we'd get loads of loading information and status stuff that we don't really care about. |
     | `https://api.unsplash.com/photos/random` | This is the _base-url_ that we're using to get our picture from. The `photos/random` bit is a built-in function of the API, and it returns a bunch of random photos to us. If you open this link in a browser, you'll see a bunch of JSON data. We're going to use `jq` to _decode_ this JSON data. |
@@ -80,7 +80,7 @@ So that's the whole script. Now that we know what's going on, we need to save it
 cat <<EOT >> ~/Scripts/random-unsplash-wallpaper.sh
 #!/bin/sh
 # Download a random photo from Unsplash using the 'Nature' tag, and set it as the desktop background.
-wget -O /tmp/Wallpaper.jpg $(curl -s 'https://api.unsplash.com/photos/random?query=nature&count=1&client_id=JiguFle4kZ4TeQpfLwwC19gXF6E0aCSWZTomnBq1Umg' | jq -r '.[0].urls.regular')
+wget -O /tmp/wallpaper.jpg $(curl -s 'https://api.unsplash.com/photos/random?query=nature&count=1&client_id=JiguFle4kZ4TeQpfLwwC19gXF6E0aCSWZTomnBq1Umg' | jq -r '.[0].urls.regular')
 gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
 EOT
 ```
