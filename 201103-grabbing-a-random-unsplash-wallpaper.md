@@ -93,25 +93,21 @@ bash ~/Scripts/random-unsplash-wallpaper.sh
 
 Your background _should_ changed. Keep in mind that you need to be connected to the internet for this script to run.
 
-## Set the background automatically
+## Automatically run the script
 
-So we've got the script, and we've checked that it works. All that's left to do is automatically run the script every time we log into the computer. We're going to use a program called Cron. Cron is a time-based job scheduler that runs on pretty much every Unix OS. In very basic terms, Cron runs scripts or commands exactly when you tell it to.
+All that's left is to have the script automatically run when we log in. To do that, we just need to copy `cp` the script into `/etc/profile.d/`:
 
-1. Enter Cron's _edit_ mode:
-
-    ```bash
-    sudo crontab -e
-    ```
-
-    When you first enter the Cron editor, it'll ask you what text editor you want to use. I use Vim because I hate myself, but you can use whatever editor you prefer.
-
-1. Scroll to the bottom of the editor and enter this line, replacing `johnny` with your username:
+1. Copy the script into `/etc/profile.d/`:
 
     ```bash
-    @reboot /home/johnny/Scripts/random-unsplash-background.sh
+    sudo cp ~/Script/random-unsplash-wallpaper.sh /etc/profile.d/
     ```
 
-1. Save your editor. If you're in Vim, hit `ESC`, then enter `:wq`.
+1. Change the permissions on the script to 644:
+
+    ```bash
+    sudo chmod 644 /etc/profile.d/random-unsplash.wallpaper.sh
+    ```
 
 Everything should now be set up properly! Every time you log in, you should see a shiny new background from Unsplash. Keep in mind that the script has no way of knowing which images you've already seen, so there is a tiny chance that you'll see the same picture more than once. We _could_ add some way to record which images we've already seen, but I'm not really in the mood for dealing with save files right now. 
 
