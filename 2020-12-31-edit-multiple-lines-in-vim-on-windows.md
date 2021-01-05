@@ -29,7 +29,7 @@ Say we've got the following code and we want to move everything between the `<ta
 ```
 
 1. Move the cursor to the `<` in `<table>`.
-1. Enter `visual-block` mode. In Windows this defaults to `CTRL` + `q`.
+1. Press `CTRL` + `v` to enter `visual-block` mode. In Windows this defaults to `CTRL` + `q`.
 1. Move to the line with `</table>`, either by pressing `j` multiple times, or entering `15j`.
 1. Press `I`. Make sure to use a capital `i`.
 1. Press tab to move the lines over. Only the top `<table>` line will move right now.
