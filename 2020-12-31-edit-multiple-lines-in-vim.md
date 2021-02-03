@@ -1,6 +1,6 @@
 ---
-title: Edit multiple lines in Vim on Windows
-description: How to edit multiple lines at once, using Vim in Windows. Specifically, I'm using Powershell.
+title: Edit multiple lines in Vim
+description: How to edit multiple lines at once. I created this mini-guide while using Windows and Powershell, but the information is relevant to Unix-based systems as well.
 ---
 
 # Edit multiple lines in Vim
