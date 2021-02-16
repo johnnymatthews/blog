@@ -14,7 +14,7 @@ During the process, we're going to **delete everything** that's inside your Mac'
 
 1. Download and install [Google Drive](https://www.google.com/drive/). After all your files and folders have finished syncing, quit the Google Drive application. Don't just close it, but completely quit out of it so that it's no longer running on your machine.
 
-    ![Quit Google Sync](media/171116-symlink-google-drive-on-osx/quit-google-sync.png)
+    ![Quit Google Sync](media/2017-11-16-symlink-google-drive-on-osx/quit-google-sync.png)
 
 2. Next we need to delete your current Documents folder. Keep in mind that anything inside this folder is about to be **deleted permanently**, so take a backup as anything deleted by using the `rm` command skips the Trash bin and gets deleted immediately. Open the terminal and run the following (enter your password if asked):
 
@@ -31,13 +31,13 @@ During the process, we're going to **delete everything** that's inside your Mac'
 
 4. That's it! Your Documents folder will now look like a link in Finder, but it will still function as a folder for all your applications and things.
 
-    ![Google Drive Link](media/171116-symlink-google-drive-on-osx/documents-link.png)
+    ![Google Drive Link](media/2017-11-16-symlink-google-drive-on-osx/documents-link.png)
 
 ## Multiple Folders
 
 If you want to, you can repeat this process for any of your other folders, like your Videos or Pictures.
 
-![Multiple Links](media/171116-symlink-google-drive-on-osx/all-folders.png)
+![Multiple Links](media/2017-11-16-symlink-google-drive-on-osx/all-folders.png)
 
 For example:
 
@@ -51,7 +51,7 @@ ln -s ~/Google\ Drive/Pictures/ ~/
 sudo rm -rf Code
 ln -s ~/Google\ Drive/Code/ ~/
 
-ln -s /Volumes/Micro\ SD/media/171116-symlink-google-drive-on-osx/ ~/
+ln -s /Volumes/Micro\ SD/media/2017-11-16-symlink-google-drive-on-osx/ ~/
 sudo rm -rf Movies
 ```
 

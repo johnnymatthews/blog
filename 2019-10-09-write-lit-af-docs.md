@@ -24,7 +24,7 @@ Knowing what docs already exist can help you figure out exactly what you need to
 
 With those two key variables, audience and existing docs, you can start planning your content. The first step is to define each section. Does the user have to install anything? What are the pre-requisites here? You'll likely have questions about the process you're writing about here, which is the whole point of planning. You get to have your questions answered now so that you don't stumble and fall later on in the writing process. For the actual process of planning, I find that it's handy to physically write things down on a notepad, with a pen and paper and everything. It keeps things simple, and it's slow enough to let me think. It also comes with the added benefit that it gets me away from the millions of distractions on my computer, something we'll delve into a bit later.
 
-![It's not blood. Honest.](media/191009-write-lit-af-docs/hand-writing-docs.png)
+![It's not blood. Honest.](media/2019-10-09-write-lit-af-docs/hand-writing-docs.png)
 
 Once you've finalized your plan you can run through it and make sure yo[ure not missing any major points. If you're writing something like an end-to-end tutorial this is the perfect time to run through the steps to make sure nothing is missing. If you're putting a more conceptual piece together, like a deep-dive into a complicated process, walk things through with a colleague or an expert on this topic. Writers can't be experts on everything, so we need to lean on those who know more than us to make sure everything _works_.
 
@@ -34,7 +34,7 @@ This is the most obvious step, but how you write is important. There's been a bu
 
 How you remove yourself from distractions depends on what you're working on, and also the kind of worker you are. If you're writing an installation guide or programming tutorial then you're probably gonna need to use your computer. I find the computer to be terrible for my creative process, but needs must. If I have to write on a computer then step one is to turn off Slack. Not just minimize it, but completely close out of the program. Second, I put my phone on do-not-disturb mode and put it face down. Lastly, if the task allows, I'll turn my WiFi off. Pretty much all the fun things I want to do with my computer require an internet connection, so severing this line is like using Firestorm against Bulbasaur - super effective.
 
-![Pokemon is life.](media/191009-write-lit-af-docs/pokemon.jpg)
+![Pokemon is life.](media/2019-10-09-write-lit-af-docs/pokemon.jpg)
 
 Now I'm going to assume that work with other people, and that those people probably want to contact you at some point. The trick is to let them know you're going to be out of action for a little bit. It can be an hour, twenty minutes, or the whole day! It completely depends on what you've got going on, how urgent the piece is, and what you're feeling like. For example, for this article, I worked from home for a day, wrote everything on a notepad in the morning, and copied everything over to my laptop in the afternoon. I checked in with everyone on my team at around 1 pm, just to make sure there were no fires that needed putting out. If you did the planning phase correctly then you shouldn't need to contact any of your colleagues for this article that you're working on
 
@@ -54,7 +54,7 @@ But what if you don't have a major in fine art from `<INSERT PRESTEGIOUS ART COL
 
 Hopefully, you'll have a decent grasp on this process already, following your planning stage. So the next step is to visually represent these three things. Start simple, map out each process on a piece of paper. Once you've got your design down, simplify it.
 
-![They don't have to be pretty on the first run through.](media/191009-write-lit-af-docs/rough-diagram.png)
+![They don't have to be pretty on the first run through.](media/2019-10-09-write-lit-af-docs/rough-diagram.png)
 
 Once you've got things down to their basic level take it into a drawing tool like Paint.net of Draw.io. You'll find that once everything is digital it makes things easier to simplify again! If you're worried about things looking nice of fitting to brand guidelines pass your diagrams and illustrations off to your company's graphics department. Don't have one? Try and get the budget to hire a freelancer. Failing that, teach yourself! Sites like YouTube and Skillshare have thousands of Photoshop and Illustrator tutorials. Being able to articulate a complex topic without using words is an incredibly unique skill to have. Being able to say you created all the beautify diagrams for your company's docs is something that can set you apart from all the other writers in your field!
 
@@ -62,7 +62,7 @@ Once you've got things down to their basic level take it into a drawing tool lik
 
 So you've got your article and all your images. Now it times to fix everything that's broken. There's always something that's broken, nobody writes perfectly first time round. There's going to be spelling mistakes, grammatical issues, broken images, and a weird flow. The best thing to do is to accept that they're there and fix as many as you can automatically. Tools like Grammarly and Hemmingway are excellent for this kind of thing.
 
-![The only downside to handwriting is copying it into a texteditor and not being able to type.](media/191009-write-lit-af-docs/grammarly.png)
+![The only downside to handwriting is copying it into a texteditor and not being able to type.](media/2019-10-09-write-lit-af-docs/grammarly.png)
 
 If you have access to some kind of automatic build-tools you can take advantage of helpers like `spell-check-js` and `NSpell`. They can automatically flag and fix spelling and grammar issues for you. Saves you copying and pasting in and out of Grammarly.
 
