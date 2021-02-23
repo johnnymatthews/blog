@@ -1,9 +1,8 @@
 ---
 title: Make git branch use ls, not less.
+description: A while ago, the maintainer of Git decided that git branch should act like less instead of ls. That was a terrible decision that made me very upset. Fortunately, the maintaners decided to leave a configuration option to let me change it back. Lovely.
 date: 2021-02-16
 ---
-
-# Make `git branch` use `ls` not `less`
 
 By default, Git uses `less` when outputting all the branches of a repo:
 

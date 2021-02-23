@@ -1,9 +1,8 @@
 ---
 title: Connect to a Raspberry Pi Zero over USB on Ubuntu
+description: I was messing around with a new Raspberry Pi Zero I got for Christmas, and I was surprised how convoluted it is to SSH into the device through the USB port. So I jotted down the steps and put them here.
 date: 2021-02-06
 ---
-
-# Connect to a Raspberry Pi Zero over USB on Ubuntu
 
 1. Format micro SD card the normal way.
 1. Put an operating system on there using the [Raspberry Pi Imager for Ubuntu](https://www.raspberrypi.org/software/).

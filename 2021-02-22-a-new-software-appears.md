@@ -1,9 +1,8 @@
 ---
-title: A new software appears
+title: A new SaaS appears
+description: New software often has a way of just appearing in your life, especially if you life is work. I recently discovered Notion.so completely by accident and through no fault of my own. It started out with an email.
 date: 2021-02-22
 ---
-
-# A new software appears
 
 I logged into my work email this Monday morning, as usual. I'd received an email from a service called Notion.so; somebody at my company had shared a document with me. The email was pretty sparse. It read something like:
 
