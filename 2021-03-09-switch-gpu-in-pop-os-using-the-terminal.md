@@ -19,7 +19,7 @@ PopOS has a feature where you can select which GPU you'd like to use: internal o
     sudo system76-power graphics integrated 
     ```
 
-If this command is successful, it will output nothing.
+    If this command is successful, it will output nothing.
 
 1. Reboot your machine:
 
