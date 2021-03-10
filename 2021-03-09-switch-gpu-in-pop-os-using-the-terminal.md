@@ -7,46 +7,48 @@ PopOS has a feature where you can select which GPU you'd like to use: internal o
 
 1. Find out what CPU you're currently using:
 
-  ```shell
-  sudo system76-power graphics
+    ```shell
+    sudo system76-power graphics
 
-  > nvidia
-  ``` 
+    > nvidia
+    ``` 
 
 1. Switch to integrated graphics:
 
-  ```shell
-  sudo system76-power graphics integrated 
-  ```
+    ```shell
+    sudo system76-power graphics integrated 
+    ```
 
 If this command is successful, it will output nothing.
 
 1. Reboot your machine:
 
-  ```shell
-  reboot
-  ``` 
+    ```shell
+    reboot
+    ``` 
 
 1. Once your system has finished booting, check that you are now running on integrated graphics:
 
-  ```shell
-  sudo system76-power graphics
+    ```shell
+    sudo system76-power graphics
 
-  > integrated 
-  ```
+    > integrated 
+    ```
 
 1. To switch back to dedicated graphics, follow the same steps using `nvidia` instead of `integrated`:
 
-  ```shell
-  sudo system76-power graphics nvidia
-  reboot
+    ```shell
+    sudo system76-power graphics nvidia
+    reboot
 
-  > ...
+    > ...
 
-  sudo system76-power graphics
+    sudo system76-power graphics
 
-  > nvidia
-  ```
+    > nvidia
+    ```
+
+1. That should do it.
 
 ## Troubleshooting
 
