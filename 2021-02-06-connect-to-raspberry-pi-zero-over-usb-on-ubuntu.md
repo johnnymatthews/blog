@@ -32,7 +32,7 @@ date: 2021-02-06
 
 1. Plug a micro-usb cable into the port _closest_ to the HDMI port on the Raspberry Pi Zero. Plug the other end of the cable into your computer.
 1. Wait two minutes for the Raspberry Pi Zero to finish doing it's thing.  
-1. Open the **Network** panel in **Settings** and click the _gear icon_ to open the settings for the **Wired connection**:
+1. Open the **Network** panel in **Settings** and click the _gear icon_ to open the settings for the **Wired connection**. In some Linux distributions, this is called **Netchip Ethernet**.
 1. Go to the **IPv6** tab and set the **IPv6 Method** to **Disable**.
 1. Go to the **IPv4** tab and set the **IPv4 Method** to **Link-Local Only**.
 1. Click **Apply**.
