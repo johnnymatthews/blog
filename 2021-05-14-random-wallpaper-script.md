@@ -4,9 +4,9 @@ description: Yet another blog post about setting your background wallpaper using
 date: 2021-05-14
 ---
 
-Over the years I've collected a pretty substantial collection of cool looking wallpaper pictures. Most operating systems have a way of automatically choosing one at random whenever you log in. Sadly, my particular version of Ubuntu doesn't have this feature. So I've had to resort to creating my own script and adding that script to a CRON job. Shocking.
+Over the years, I've collected a pretty substantial collection of cool-looking wallpaper pictures. Most operating systems have a way of automatically choosing one at random whenever you log in. Sadly, my particular version of Ubuntu doesn't have this feature. So I've had to resort to creating a script and adding that script to a Cron job. Shocking.
 
-The script itself is really simple. First it creates a variable for the location of the wallpapers:
+The script itself is straightforward. First, it creates a variable for the location of the wallpapers:
 
 ```shell
 WALLPAPER_DIR="/home/johnny/Pictures/Wallpaper"
@@ -35,10 +35,11 @@ RANDOM_PICTURE=$(ls $WALLPAPER_DIR -1 | shuf -n 1)
 gsettings set org.gnome.desktop.background picture-uri "file://$WALLPAPER_DIR/$RANDOM_PICTURE"
 ```
 
-All that's left is to save this script somewhere, make it executable, and add it to a CRON job. To set a CRON job, open the crontable with `crontab -e` and create a new line:
+All that's left is to save this script somewhere, make it executable, and add it to a Cron job. To set a Cron job, open the Cron table with `crontab -e` and create a new line:
 
 ```shell
 15 10 * * * /home/johnny/Apps/random-wallpaper.sh
 ```
 
-The line above sets CRON to run the `random-wallpaper.sh` script every day at 10:15. Lovely stuff.
+The line above sets a Cron job to run the `random-wallpaper.sh` script every day at 10:15. Lovely stuff.
+
