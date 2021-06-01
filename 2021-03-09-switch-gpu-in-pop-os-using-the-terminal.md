@@ -1,5 +1,6 @@
 ---
 title: Switch GPU in Pop OS using the terminal
+date: 2021-03-09
 description: Sometimes, you need a beefy GPU to process all the shaders in Metro 2033. And other times, you just need the integrated CPU graphics to show you a terminal window while you try to rebuild a Lotus binary on the train to Kings Cross without your battery crapping out. 
 ---
 
