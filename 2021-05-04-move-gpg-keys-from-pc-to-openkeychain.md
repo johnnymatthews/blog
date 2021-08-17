@@ -20,4 +20,10 @@ Once you've copied the key over to your phone, and it's imported, make sure to d
 rm key-export.sec.asc
 ```
 
+For some reason, MacOS doesn't let you export keys properly, so you may have to _export_ `GPG_TTY` to your shell. Run:
+
+```shell
+export GPG_TTY=$(tty)
+```
+
 And that's it! You're all done.
