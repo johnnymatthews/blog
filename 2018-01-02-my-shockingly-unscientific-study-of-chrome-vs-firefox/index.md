@@ -84,7 +84,7 @@ Yet again, Chrome comes out on top! Clearly I've been reading to wrong articles 
 
 It's Firefox. There's no point debating it.
 
-![Firefox Loading Icon](media/2018-01-02-my-shockingly-unscientific-study-of-chrome-vs-firefox/loading-icons.gif)
+![Firefox Loading Icon](loading-icons.gif)
 
 ## Conclusion
 

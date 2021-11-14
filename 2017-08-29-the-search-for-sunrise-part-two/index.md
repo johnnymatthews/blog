@@ -12,11 +12,11 @@ If you haven't read it, the story is about a boy born on a tiny planet who start
 
 This meeting with the fox is somewhat of a turning point in the story, and it's also incredibly relevant to Maree Docia. You see, nearly every written version of Le Petit Prince includes an illustration of shot of the Prince and the fox sat next to each other.
 
-![The Princes and the Foxes](/blog/media/2017-08-29-the-search-for-sunrise-part-two/the-princes-and-the-foxes.png)
+![The Princes and the Foxes](the-princes-and-the-foxes.png)
 
 They all look shockingly similar to the album cover for Docia's [We Were Legends](https://open.spotify.com/album/0Rv82yRFV9inly8ChKaO72), even down to the colour of the kids clothing!
 
-![We Were Legends Album Cover](/blog/media/2017-08-29-the-search-for-sunrise-part-two/we-were-legends-album.jpg)
+![We Were Legends Album Cover](we-were-legends-album.jpg)
 
 This revelation opened up yet another rabbit hole, that I all to enthusiastically jumped down. And yes I am well aware that I'm playing fast and loose with the word *revelation*, but you need to understand that I am now more emotionally invested in finding out who Maree Docia is than I was for my final year dissertation at university.
 

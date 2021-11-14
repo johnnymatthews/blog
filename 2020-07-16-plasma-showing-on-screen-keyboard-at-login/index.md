@@ -6,7 +6,7 @@ date: 2020-07-16
 
 The clipboard app just keeps a record of everything that's been in your clipboard. A fairly useful utility, unless you copy your passwords to clipboard using a password manager. So, to mitigate security issues I decided to get rid of the clipboard app. I used Kubuntu's built in software center _Discover_, clicked **Installed** and scrolled down until I found **KDE Plasma Desktop - Clipboard**. Then I clicked **Remove** and carried on with my day.
 
-![The KDE Discover software center with KDE Plasma Desktop - Clipboard highlighted.](./media/2020-07-16-plasma-desktop-environment-issue/clipboard-app-in-discover.png)
+![The KDE Discover software center with KDE Plasma Desktop - Clipboard highlighted.](clipboard-app-in-discover.png)
 
 A while later I needed to reboot my machine, so I did. But when it came time to login, I was greeted with a completely different screen to my usual login experience. For one thing, an onscreen keyboard took up the entirity of the screen, and it was set to _British English_ for some reason. I am English, but I live in Canada, so not sure how KDE figured that one out.
 

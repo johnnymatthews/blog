@@ -18,16 +18,16 @@ To help keep things organized, Unsplash lets you create separate applications wi
 1. From the developer homepage, click **New Application**.
 1. Check all the _"I promise I won't break or abuse stuff"_ boxes, then click **Accept terms**:
 
-    ![The guidelines and terms box within Unsplash's developer console.](media/2020-11-03-grabbing-a-random-unsplash-wallpaper/guidelines-and-terms.png)
+    ![The guidelines and terms box within Unsplash's developer console.](guidelines-and-terms.png)
 
 1. Give your application a super useful name and description:
 
-    ![An application information pop-up with completely useless information in it.](media/2020-11-03-grabbing-a-random-unsplash-wallpaper/application-information.png)
+    ![An application information pop-up with completely useless information in it.](application-information.png)
 
 1. Click **Create application**.
 1. You should now be looking at a homepage for your application. Scroll down until you find the **Keys** section:
 
-    ![Two text boxes showing my secret keys to the world.](media/2020-11-03-grabbing-a-random-unsplash-wallpaper/keys.png)
+    ![Two text boxes showing my secret keys to the world.](keys.png)
 
     Make a note of the **Access Key**; we'll be using it later. In fact, why not just keep this tab open until we're finished.
 
@@ -35,7 +35,7 @@ To help keep things organized, Unsplash lets you create separate applications wi
 
 Now that we've got out access keys set up, we can actually start creating the script! I decided I want to set my background to a random Unsplash image with the `nature` tag attached to it:
 
-```bash
+```shell
 #!/bin/sh
 # Download a random photo from Unsplash using the 'Nature' tag and set it as the desktop background.
 
