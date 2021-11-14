@@ -15,12 +15,12 @@ date: 2021-05-31
     | Description | Creates a new virtual desktop using a script. |
     | Category | Productivity |
 
-    ![Create a workflow screen.](media/2021-05-31-create-a-new-virtual-desktop-in-mac-os/create-a-workflow-screen.png)
+    ![Create a workflow screen.](create-a-workflow-screen.png)
 
 1. Click **Create**.
 1. Right-click in the workflow panel and select **Input** > **Keyword**.
 
-    ![Select input > keyword.](media/2021-05-31-create-a-new-virtual-desktop-in-mac-os/select-input-keyword.png)
+    ![Select input > keyword.](select-input-keyword.png)
 
 1. Enter the following information:
 
@@ -31,11 +31,11 @@ date: 2021-05-31
     | Title | Desktop |
     | Subtitle | Creates a virtual desktop. |
 
-    ![Create a keyword.](media/2021-05-31-create-a-new-virtual-desktop-in-mac-os/create-a-keyword.png)
+    ![Create a keyword.](create-a-keyword.png)
 
 1. Right click the block that was just created and select **Insert after** > **Actions** > **Run script**. 
 
-    ![Select Insert after > Actions > Run script.](media/2021-05-31-create-a-new-virtual-desktop-in-mac-os/select-run-script.png)
+    ![Select Insert after > Actions > Run script.](select-run-script.png)
 
 1. Set the **Language** to **osascript (AS)**.
 1. Leave **with input as argv** and running instance **sequentially** as their defaults.
@@ -53,7 +53,7 @@ date: 2021-05-31
 1. Click **Save**.
 1. Open Alfred and search for `desktop`.
 
-    ![Search for desktop.](media/2021-05-31-create-a-new-virtual-desktop-in-mac-os/search-for-desktop.png)
+    ![Search for desktop.](search-for-desktop.png)
 
 1. That's it!
 
