@@ -1,10 +1,8 @@
 ---
 title: The Search for Sunrise - Part Two 
-description: This is the second part in my never ending quest to prove that Maree Docia probably doesn't actually exist. To catch you up, Maree Docia is an artist on Spotify with a few popular tracks. However, outside of Spotify, there is no mention of Maree Docia out in the wild. This series of posts attempts to find out what's going on.
+description: "This is the second part in my never ending quest to prove that Maree Docia probably doesn't actually exist. To catch you up, Maree Docia is an artist on Spotify with a few popular tracks. However, outside of Spotify, there is no mention of Maree Docia out in the wild. This series of posts attempts to find out what's going on."
 date: 2017-08-29
 ---
-
-## The Search for Sunrise - Part Two
 
 About a week ago a colleague of mine introduced me to a French children's story called *Le Petit Prince*, written by [Antoine de Saint-Exupery](https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry).
 
@@ -31,3 +29,4 @@ I gave the movie a watch, and then listened to the soundtrack to see if there we
 And this is the problem with this story. There's so many loose ends and ties that could lead to somewhere, but they either end up going nowhere, or not existing in the first place. I'll be honest, I'm getting a little disheartened with it. It might just be that Maree Docia forever remains a mystery.
 
 There's on last avenue of hope that I'm going to wander down before I call it a day. Look for part three.
+

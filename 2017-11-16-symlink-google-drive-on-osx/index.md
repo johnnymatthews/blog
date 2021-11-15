@@ -56,3 +56,4 @@ sudo rm -rf Movies
 ```
 
 In the last example (Movies) I created a link to a Micro SD card that is permanently in my Macbook.
+

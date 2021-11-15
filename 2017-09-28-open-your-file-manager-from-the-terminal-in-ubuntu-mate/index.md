@@ -6,7 +6,7 @@ date: 2017-09-28
 
 Add the following line into your `.bashrc` file:
 
-```bash
+```shell
 alias ofm=`gnome-open .
 ```
 
@@ -15,3 +15,4 @@ Make sure to include the dot at the end.
 Run `source ~/.bashrc` and you should now be able to run `ofm` within a terminal to **o**pen your **f**ile **m**anager at the same directory your terminal is currently in.
 
 This post was build with Ubuntu Mate in mind, but any Linux distro using the [Gnome file manager](https://en.wikipedia.org/wiki/GNOME_Files) should work fine.
+

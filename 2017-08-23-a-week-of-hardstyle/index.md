@@ -1,10 +1,8 @@
 ---
 title: A Week Of Hardstyle
-description: I just spend the last week listening to nothing but Hardstyle music at work. When I say that, I wasn't actually listening to it 100% non-stop, obviously. What I mean is I didn't listen to any other genre of music while working. No punk rock, no classical stuff, no spoken word. Just Hardstyle.
+description: I just spent the last week listening to nothing but Hardstyle music at work. When I say that, I wasn't actually listening to it 100% non-stop, obviously. What I mean is I didn't listen to any other genre of music while working. No punk rock, no classical stuff, no spoken word. Just Hardstyle.
 date: 2017-08-23
 ---
-
-## Why
 
 Recently I've found myself getting super frustarted with myself purely because I can't decide what to listen to, and I end up spending more time browsing Spotify than actually coding. This [Commit Strip comic](http://www.commitstrip.com/en/2017/01/26/on-the-wrong-track/) springs to mind. Also, I've never really given Hardstyle a proper chance to sneak into my music library. I used to thoroughly enjoy a bit of Trance and Dance back in the day. How different can this new-age stuff be? Spoiler: **very**.
 
@@ -36,3 +34,4 @@ Which leads us to this past week. I've spent the last 5 days with a YouTube auto
 ## In conclusion
 
 Meh, it's alright. There's very little variation between tracks since they're all using the same chord progressions and BPM. I imagine it'd be entertaining at a festival or something, maybe.
+

@@ -4,6 +4,8 @@ description: Bored of the standard Android OS on your Nexus 5X? You might be int
 date: 2018-03-01
 ---
 
+This is essentially just my cheatsheet for installing LineageOS on a Nexus 5X. The process detailed here is pretty similar to how to install LineageOS on other Android devices, but you'll need a different OS download and TWRP, most likely.
+
 ## Prerequisite downloads
 
 1. Download [TWRP](https://dl.twrp.me/bullhead/) to your Downloads folder.
@@ -44,3 +46,4 @@ date: 2018-03-01
 1. Navigate to `/sdcard` and select the Google Apps `.zip` file you copied to the phone in Step 3.
 1. Follow the on-screen prompts to install the packages.
 1. When the installation has finished select **Reboot**, and then **System**.
+

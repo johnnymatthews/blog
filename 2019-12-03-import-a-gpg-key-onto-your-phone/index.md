@@ -4,6 +4,8 @@ description: GPG keys are a super secure way to encrypt your stuff. If you're an
 date: 2019-12-03
 ---
 
+It's a bit of a pain, but it's possible to do. Here we go:
+
 ## Import a GPG key onto your phone
 
 1. On your phone, install [OpenKeychain](https://www.openkeychain.org/)

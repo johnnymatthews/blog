@@ -24,7 +24,7 @@ So now we've got a shiny new list of Impact Case studies using data in the UK Da
 
 The API allows us to grab all the articles that fall under each UOA, so we downloaded everything from each Unit of Assessment into its own json file. We wrote a script to run through all 36 UOAs and grab the associated json:
 
-```bash
+```shell
 for i in {1..36}
 do
     wget -O UOA$i.json "http://impact.ref.ac.uk/casestudiesapi/REFAPI.svc/SearchCaseStudies?UoA=$i"
@@ -33,7 +33,7 @@ done
 
 Next on the to-do list was to search through each of the 36 json files (all stored in the same directory) for each of the UK Data Service studies out of the list we created earlier. The best way to do this was to use a search tool built into Unix systems call `ACK`. Here's the script first, we'll go into it in a second:
 
-```bash
+```shell
 declare -a Topics=('1970 British Cohort Study' 'British Household Panel Survey' 'English Longitudinal Study of Ageing' 'Growing Up in Scotland' ... );
 
 for i in {0..44}
@@ -59,7 +59,7 @@ The next section is where the magic happens. First up we call the `ack` command 
 
 And that's it! The bash terminal then outputs a big list of all the data in the UK Data Service collection that are referenced or mentioned in any REF2014 Impact Case Study!
 
-```bash
+```shell
 SEARCHING: 1970 British Cohort Study
 /home/john_matthews/dev/public/projects/ref/UOA4 - Psychology, Psychiatry and Neuroscience.json
 SEARCHING: British Household Panel Survey

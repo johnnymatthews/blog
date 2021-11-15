@@ -21,3 +21,4 @@ If you're wondering, Maree Docia's _At Last, Sunrise_ fits into the following ca
 | Beautiful | Relaxing | 69 | Low |
 
 There's not much to go off here, so I browsed around and managed to find an email address. I sent Epidemic Sounds to see if I could get some basic information, mainly who Maree is, what contact they've had with her, and where she came from. Somewhat predictably, however, they weren't able to give me any information about Maree. It's not that they don't know anything, but that they're legally not allowed to give it out. That's what they're claiming anyway. Unfortunate, but understandable.
+

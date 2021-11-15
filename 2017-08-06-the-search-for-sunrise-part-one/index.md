@@ -6,6 +6,8 @@ date: 2017-08-06
 
 Unfortunately, if you don't have a Spotify account then you're out of luck. Spotify is the only place you can find it. There is no YouTube channel, Bandcamp profile, or Soundcloud page. And if you're thinking you'll just buy the CD, then I'm afraid you'll find no joy there either. There are no places to purchase a physical copy of Maree Docia's music.
 
+> Note from 2021: this is actually no longer the case. There's a bunch of people who've uploaded a copy of this track to YouTube, but none of them are the _official_ Maree Docia, as far as I can tell.
+
 Initially, I thought this was a bit odd. Why would an artist choose to give Spotify the exclusive hosting rights to their music? So I did a little digging but came up short. Very short. So short that I can't actually tell you anything about Maree Docia. There is very little evidence that suggests she exists at all.
 
 There are no records of where she is from, which label she registered her music under, where she recorded her album, or who designed the album cover! I found that more than a little concerning. Surely there must be some indication of this woman's existence?
@@ -22,4 +24,4 @@ In a world where our every move is tracked by our phones, and our thoughts are p
 
 There are universities and independent researchers all around the world trying coax music from an artificial intelligence. Could Docia be an experiment from Spotify, an attempt to create music on the fly and pass it off as human creation? My friends and colleagues think I'm turning into a conspiracy nutjob, and they might be right. But the more I think about it, the more I am convinced that Maree Docia isn't real.
 
-Maybe it's time to take a different approach.
+[Maybe it's time to take a different approach.](../2017-08-29-the-search-for-sunrise-part-two)

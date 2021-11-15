@@ -4,6 +4,8 @@ description: We're going to quickly run through how to set up a backup and resto
 date: 2017-04-25
 ---
 
+This is essentially just a cheatsheet for myself, but it might come in handy for someone else one day. Good luck!
+
 ## Prerequisites
 
 ### Composer
@@ -15,7 +17,7 @@ date: 2017-04-25
 
 1. Run the following commands:
 
-    ```bash
+    ```shell
     sudo apt-get install python-pip python-dev build-essential -y
     sudo pip install --upgrade pip
     sudo pip install --upgrade virtualenv
@@ -35,7 +37,7 @@ These instructions can be found on the [GitHub repo home page](https://github.co
 2. Run `cp .env-example .env` to copy and rename `.env-example` to `.env`.
 3. Edit the `.env` file to relfect the details of the server you are connected to:
 
-    ```bash
+    ```shell
     username_mysql="SUPER_FUN_MYSQL_USERNAME"
     password_mysql"INCREDIBLY_SECURE_MYSQL_PASSWORD"
     database_mysql="STANDARD_DATABASE_NAME"
@@ -46,7 +48,7 @@ These instructions can be found on the [GitHub repo home page](https://github.co
 1. Run `composer install` to install all the PHP dependencies.
 1. Install [pip](//pypi.python.org/pypi/pip) by running the following:
 
-    ```bash
+    ```shell
     sudo apt-get install python-pip python-dev build-essential -y
     sudo pip install --upgrade pip
     sudo pip install --upgrade virtualenv
@@ -55,14 +57,14 @@ These instructions can be found on the [GitHub repo home page](https://github.co
 1. Install AWS CLI by running `pip install awscli --upgrade --user`
 1. Add the following line into `~/.bashrc`:
 
-    ```bash
+    ```shell
     export PATH=~/.local/bin:$PATH
     ```
 
 1. Run `source ~/.bashrc`
 1. Run `aws configure` and fill out the form, inputting the correct credentials into each section.
 
-    ```bash
+    ```shell
     AWS Access KEY ID [None]: PASTE_KEY_HERE
     AWS Secret Access Key [None]: PASTE_KEY_HERE
     Default region name [None]: eu-west-1

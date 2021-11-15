@@ -37,3 +37,4 @@ You should now be able to upload files of up to 2GB into your server.
 2. Search for `upload_max_filesize`, change to required value.
 3. Search for `post_max_size`, change to require value (=< than `upload_max_filesize`)
 4. `sudo service apapche2 restart`
+

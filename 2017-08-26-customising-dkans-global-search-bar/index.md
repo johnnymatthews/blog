@@ -4,11 +4,11 @@ description: DKAN is an open-source tool for managing and displaying large publi
 date: 2017-08-26
 ---
 
-## The Bar
-
 In [DKAN](https://getdkan.org/) there's a function that you can call within your theme to show a search bar. This search bar utilizes DKANs global search functions and returns results from all over your instance. As powerful as this search bar is, it's kinda tricky to customise it.
 
-It's not terrible by anymeans, at least it follows the guidance from the current theme. But it's kinda clunky. For one, the **submit** button reads **fl** for some reason. Also, the placeholder text isn't capitalised. And I don't really like the **Search** title above the bar. Finally, I'd like the search bar and submit button to be on the same line, makes things just look a bit more tidy.
+## The Bar
+
+It's not terrible by any means, at least it follows the guidance from the current theme. But it's kinda clunky. For one, the **submit** button reads **fl** for some reason. Also, the placeholder text isn't capitalised. And I don't really like the **Search** title above the bar. Finally, I'd like the search bar and submit button to be on the same line, makes things just look a bit more tidy.
 
 ## The Code
 
@@ -165,10 +165,11 @@ This adds the `pull-left` class into the `<input` tag on the front-end html.
 <input placeholder="Search" class="pull-left form-control form-text" type="text" id="edit-search" name="search" value="" size="50" maxlength="128">
 ```
 
-Anoying though, I think I need to add the `pull-left` class into the surrounding `div`. Which means I need to find where *that* `div` is created. *Drupal is anything **but* simple*.
+Anoying though, I think I need to add the `pull-left` class into the surrounding `div`. Which means I need to find where *that* `div` is created. Drupal is anything but simple.
 
 Putting a `dump and die` (also known as `print_r($output); die;`) just before $output is returned from `dkan_sitewide_search_bar() gives us a *ruddy huge* array, 335 lines to be precise.
 
 The start of the array has two sub arrays, `search` and `submit`. I'm guessing they're connected to the search bar and submit buttons on the front end. Maybe there's something in here that I can edit to add another class to the outside div?
 
 It looks like I need to override `dkan_sitewide_dataset_search_form()` somehow, but I don't know how to do so. If I don't then every time I update DKAN all this work will be lost and I'll have to manually customise the array.
+

@@ -10,7 +10,7 @@ If you're connecting to a remote server, you'll want to connect over SSH: `ssh u
 
 Run the following line by line:
 
-```bash
+```shell
 mysql -uroot -p # log into mysql service
 DROP DATABASE dkan; # drop the current dkan database if it's there
 CREATE DATABASE dkan; # create a new, blank, dkan database
@@ -28,7 +28,7 @@ sudo service apache2 restart # restart apache
 
 ### DKAN Permission Settings
 
-```bash
+```shell
 sudo mkdir /var/www/html/sites/default/files # make a directory for dkan uploaded files
 sudo chmod 777 /var/www/html/sites/default/files # make the files directory completely public (read-write-exe)
 sudo cp /var/www/html/sites/default/default.settings.php /var/www/html/sites/default/settings.php # copy the default settings config
@@ -43,13 +43,13 @@ Complete the interactive Drupal installation in the browser.
 
 Run the following:
 
-```bash
+```shell
 sudo chmod 744 /var/www/html/sites/default/settings.php # revert the settings config back to safe settings
 ```
 
 ## Composer
 
-```bash
+```shell
 sudo apt-get update # update the local apt repository
 sudo apt-get install curl php-cli php-mbstring git unzip # install dependencies for composer
 cd ~ # move into the home directory
@@ -62,7 +62,7 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer # r
 
 Run the following:
 
-```bash
+```shell
 cd /var/www/html # move into the public html directory
 sudo composer require drush/drush # tell composer to install drush
 vendor/bin/drush # run drush to check everything worked

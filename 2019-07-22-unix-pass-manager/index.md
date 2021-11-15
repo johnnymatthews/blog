@@ -4,7 +4,7 @@ description: Password managers are great. Services like Lastpass, 1Password, and
 date: 2019-07-22
 ---
 
-In 2017 there was a bug in the Lastpass browser plugin that [exposed passwords in plain text](https://www.engadget.com/2017/03/22/critical-exploits-found-in-lastpass-on-chrome-firefox/). Stuff like this is super bad, and can be exploited by attackers to get access to all your stuff.
+In 2017 there was a bug in the Lastpass browser plugin that [exposed passwords in plain text](https://www.engadget.com/2017/03/22/critical-exploits-found-in-lastpass-on-chrome-firefox/). Stuff like this is super bad, and can be exploited by attackers to get access to all your stuff. And this bug was enough to make me re-think my op-sec.
 
 So today we're going to walk through [Pass: the Unix Password Manager](https://www.passwordstore.org/). Essentially, Pass does all the same things that Lastpass and 1Password and Dashlane do, but locally on your machine. Your passwords are encrypted using a GPG key and stored in a repository. Only instead of an online service holding all your data, you're in charge of it.
 
@@ -16,19 +16,19 @@ We're going to install the Pass program, setup a GPG key pair to use, and then s
 
 If you're using Ubuntu run:
 
-```bash
+```shell
 sudo apt install pass haveged ruby -y
 ```
 
 If you're running MacOS, you'll need to have the [Brew Package Manager](https://brew.sh/) installed first. Once you've got that installed run:
 
-```bash
+```shell
 brew install pass
 ```
 
 You should now have Pass installed. Run `pass --version`. You should see something like this:
 
-```bash
+```shell
 pass --version
 
 > ============================================
@@ -49,7 +49,7 @@ The GPG key is what encrypts your passwords and keeps them safe. You need to hav
 
 1\. Start the key generation:
 
-```bash
+```shell
 gpg --gen-key
 
 > gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
@@ -60,7 +60,7 @@ gpg --gen-key
 
 2\. Select the `RSA and RSA (default)` option:
 
-```bash
+```shell
 > Please select what kind of key you want:
 >    (1) RSA and RSA (default)
 >    (2) DSA and Elgamal
@@ -73,7 +73,7 @@ gpg --gen-key
 
 3\. Set the key size to 4096:
 
-```bash
+```shell
 > RSA keys may be between 1024 and 4096 bits long.
 > What keysize do you want? (2048):
 
@@ -82,7 +82,7 @@ gpg --gen-key
 
 4\. Set when you want the key to expire. While having a key that doesn't expire is convienent, it's insecure. You're best off selecting 1 month:
 
-```bash
+```shell
 > Please specify how long the key should be valid.
 >          0 = key does not expire
 >       <n>  = key expires in n days
@@ -95,7 +95,7 @@ gpg --gen-key
 
 It'll ask you to confirm that the expiration date is correct:
 
-```bash
+```shell
 > Key expires at Mon 05 Aug 2019 03:12:25 PM UTC
 > Is this correct? (y/N)
 
@@ -104,7 +104,7 @@ y
 
 5\. Next up is to add your details into the key. This gets handy when you have more than one key on your system and you need to keep track of which one's which:
 
-```bash
+```shell
 > Real name: Johnny
 > Email address: johnny@email.com
 > Comment: Key for Unix Pass
@@ -114,7 +114,7 @@ y
 
 6\. Enter `O` to select that everything's okay:
 
-```bash
+```shell
 > Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?
 O
 ```
@@ -123,7 +123,7 @@ O
 
 8\. After a few seconds you should see something like the following:
 
-```bash
+```shell
 > gpg: key CA987727 marked as ultimately trusted
 > public and secret key created and signed.
 >
@@ -143,7 +143,7 @@ So that's your GPG key sorted, keep it safe! You won't be able to access your pa
 
 This step creates a blank database for you to store your passwords in. To initialize your password store, you'll need the name you gave to your GPG key. I used _Johnny_ in the example above.
 
-```bash
+```shell
 pass init Johnny
 
 > mkdir: created directory '/home/johnny/.password-store/'
@@ -162,7 +162,7 @@ Now that you've got your GPG key created and ready to use, we're going to create
 
 3\. Back in the terminal, add your GitHub repo to your password store:
 
-```bash
+```shell
 pass git init
 
 > Initialized empty Git repository in /home/vagrant/.password-store/.git/
@@ -170,13 +170,13 @@ pass git init
 
 4\. Tell Git and Pass where your repository is stored by running this command and adding your repository's URL onto the end:
 
-```bash
+```shell
 pass git remote add origin YOUR_GIT_URL
 ```
 
 For example:
 
-```bash
+```shell
 pass git remote add origin https://github.com/johnny/passwordstore
 ```
 
@@ -188,7 +188,7 @@ So you've got your password manager setup, but how do you use it? It might help 
 
 Because all the passwords are stored in files, they can be organized into folders for easier management. I like to keep my work life and personal life separate, so I have a password folder for work and one for personal things:
 
-```bash
+```shell
 tree ~/.password-store
 
 > ~/password-store
@@ -202,20 +202,20 @@ At the moment I don't have any passwords stored in Pass, so let's add one.
 
 1\. Create a new password for GitHub:
 
-```bash
+```shell
 pass add personal/github
 ```
 
 2\. Pass will ask you to enter the password twice.
 
-```bash
+```shell
 > Enter password for personal/github:
 > Retype password for personal/github:
 ```
 
 3\. You now have a password stored in Pass! You can see it by listing all the passwords in your password store with the `pass` command:
 
-```bash
+```shell
 pass
 
 > Password Store
@@ -225,7 +225,7 @@ pass
 
 Pass can create passwords for you too, so you don't have to think of a hard-to-crack password every time!
 
-```bash
+```shell
 pass generate personal/github 18
 
 The generated password for personal/github is:
@@ -243,7 +243,7 @@ The number at the end of the command is the length of the password. You can supp
 
 To view a password, simply call the location of the password file with the `pass` command:
 
-```bash
+```shell
 pass personal/github
 
 > UWR9F$2Q"3E,l2={xG
@@ -251,7 +251,7 @@ pass personal/github
 
 If you just want to copy your password straight to your clipboard without it showing in the terminal, add the `-c` argument.
 
-```bash
+```shell
 pass -c personal/github
 ```
 
@@ -259,7 +259,7 @@ pass -c personal/github
 
 If you need to edit a password file, call the `edit` command, followed by the file you want to edit:
 
-```bash
+```shell
 pass edit personal/github
 ```
 
@@ -271,7 +271,7 @@ When editing your file, keep in mind that your password should **always be store
 
 If you have decided you no longer need a password, run the `delete` command and select the password or folder you want to delete:
 
-```bash
+```shell
 pass delete personal/github
 
 > Are you sure you would like to delete personal/github? [y/N]
@@ -286,7 +286,7 @@ Y
 
 You can also delete the file directly with the `rm` command:
 
-```bash
+```shell
 rm ~/.password-store/personal/github
 ```
 
@@ -312,26 +312,26 @@ Now that you've downloaded all your passwords, we can import them using a script
 
 6\. Download the script to your root `~` folder:
 
-```bash
+```shell
 cd ~/
 wget https://git.zx2c4.com/password-store/plain/contrib/importers/lastpass2pass.rb
 ```
 
 7\. Call the script, and enter the destination of your LastPass export file as an argument:
 
-```bash
+```shell
 ./lastpass2pass.rb path/to/passwords_file.csv
 ```
 
 For example:
 
-```bash
+```shell
 ./lastpass2pass.rb ~/Downloads/passwords_from_lastpass.csv
 ```
 
 8\. The script should output something like this:
 
-```bash
+```shell
 Reading '/home/johnny/Downloads/passwords_from_lastpass.csv'...
 6 records found!
 Records parsed: 6

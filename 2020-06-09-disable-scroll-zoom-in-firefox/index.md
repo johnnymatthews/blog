@@ -4,6 +4,8 @@ description: It's super annoying when you're scrolling down a window and press `
 date: 2020-06-09
 ---
 
+It's silly and I don't like it.
+
 1. Go to [`about:config`](about:config) in Firefox.
 1. Search for `mousewheel.with_control.action` and change it to `0`.
 1. Search for `mousewheel.with_meta.action` and change it to `0`.
@@ -16,3 +18,4 @@ services.sync.prefs.sync.mousewheel.with_control.action
 ```
 
 That's about it! You should now have successfully disabled the touchpad scrolly thing.
+

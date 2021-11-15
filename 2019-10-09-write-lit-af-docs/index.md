@@ -79,3 +79,4 @@ For those developer open-source tech, there's a whole group of people you can le
 ## That's about it
 
 Hopefully, you made it to here, and now have a more solid idea of how to please your parents. As with everything else in the tech industry, writing docs is an evolving process and everyone needs to find a workflow that works for them. I hoping that the steps provided here have given you at least a good foundation to build off.
+

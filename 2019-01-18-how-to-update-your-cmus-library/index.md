@@ -10,7 +10,7 @@ All it does is bind a few commands to the `u` key in CMUS. So every time you nee
 
 1. Create the following file:
 
-    ```bash
+    ```shell
     #!/bin/bash
     cmus-remote -C clear
     cmus-remote -C "add ~/Music"
@@ -21,20 +21,21 @@ All it does is bind a few commands to the `u` key in CMUS. So every time you nee
 
 3. Change the permissions to make the script executable:
 
-    ```bash
+    ```shell
     chmod +x ~/Applications/cmus-osx/update-library.sh
     ```
 
 4. Open `CMUS`:
 
-    ```bash
+    ```shell
     cmus
     ```
 
 5. Enter the following within `CMUS` to bind the update script to the `u` key:
 
-    ```bash
+    ```shell
     :bind -f common u shell ~/Applications/cmus-osx/update-library.sh
     ```
 
 6. There you go! You can new press the `u` key to update your entire library when within `CMUS`.
+
