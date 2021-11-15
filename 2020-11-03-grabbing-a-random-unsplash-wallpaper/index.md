@@ -4,8 +4,6 @@ description: Look, I know there's a bunch of tutorials out there that show you h
 date: 2020-11-03
 ---
 
-## Create Unsplash developer account
-
 The lovely folks at Unsplash want developers to sign up to their API so they can do things like rate limiting and abuse detection. Understandable.
 
 1. Go to [unsplash.com/join and sign up](https://unsplash.com/join). If you want to test out the API and don't fancy giving Unsplash your real email, use something like [temp-mail.org](https://temp-mail.org/en/) to create a throw-away email account.
@@ -76,7 +74,7 @@ Let's go through it line by line.
 
 So that's the whole script. Now that we know what's going on, we need to save it somewhere. Copy and paste this whole codeblock into a command-line to create a script called `random-unsplash-wallpaper.sh` in `~/Scripts/`:
 
-```bash
+```shell
 cat <<EOT >> ~/Scripts/random-unsplash-wallpaper.sh
 #!/bin/sh
 # Download a random photo from Unsplash using the 'Nature' tag, and set it as the desktop background.
@@ -87,7 +85,7 @@ EOT
 
 To test that we've got everything set up properly, run the script:
 
-```bash
+```shell
 bash ~/Scripts/random-unsplash-wallpaper.sh
 ```
 
@@ -99,13 +97,13 @@ All that's left is to have the script automatically run when we log in. To do th
 
 1. Copy the script into `/etc/profile.d/`:
 
-    ```bash
+    ```shell
     sudo cp ~/Script/random-unsplash-wallpaper.sh /etc/profile.d/
     ```
 
 1. Change the permissions on the script to 644:
 
-    ```bash
+    ```shell
     sudo chmod 644 /etc/profile.d/random-unsplash.wallpaper.sh
     ```
 
@@ -116,3 +114,4 @@ Everything should now be set up properly! Every time you log in, you should see 
 ### The `Wallpaper.jpg` location
 
 I put the `Wallpaper.jpg` file in `/tmp` because it's a directory that exists on pretty much every Unix OS, **and** it's temporary. Since I'm gonna be overwriting `Wallpaper.jpg` on every boot, it makes sense to put this file in a temporary location.
+

@@ -4,10 +4,12 @@ description: "I often fine myself needing to copy the contents of a file into th
 date: 2021-01-12
 ---
 
+Copying files is fun. Most of the time.
+
 1. Open the RC file for your shell. I'm using ZSH, so I need to open `~/.zshrc`.
 1. Create a new function called `copy`:
 
-    ```bash
+    ```shell
     function copy() {
 
     }
@@ -15,7 +17,7 @@ date: 2021-01-12
 
 1. Within the function, use `cat` to return the contents of a file:
 
-    ```bash
+    ```shell
     function copy() {
         cat $1 
     }
@@ -25,7 +27,7 @@ date: 2021-01-12
 
 1. Pipe the output of `cat` to `xclip`:
 
-    ```bash
+    ```shell
     function copy() {
         cat $1 | xclip -i
     }
@@ -35,7 +37,7 @@ date: 2021-01-12
 
 1. Tell xclip that we want to add this content to the secondary clipboard:
 
-    ```bash
+    ```shell
     function copy() {
         cat $1 | xclip -i -seletion clipboard
     }
@@ -46,7 +48,7 @@ date: 2021-01-12
 1. Save and exit the RC file.
 1. Source the file to get the updates:
 
-    ```bash
+    ```shell
     source ~/.zshrc
     ```
 
@@ -54,7 +56,7 @@ date: 2021-01-12
 
 1. You should now be able to copy the contents of a file using `copy filename`:
 
-    ```bash
+    ```shell
     echo "This is a test." >> test.txt
     copy test.txt
     ```

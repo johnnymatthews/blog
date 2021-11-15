@@ -4,6 +4,8 @@ description: The printer-spooler in Windows 10 is all kinds of fucked, and is a 
 date: 2021-07-22
 ---
 
+By the god's Windows is a mess:
+
 ## Turn the print-spooler off
 
 1. Open a Command Prompt window with admin privilages.
@@ -24,6 +26,7 @@ date: 2021-07-22
     sc config spooler start=auto && net start spooler
     ```
 
-1. Print off your stuff, then immedietly run the [disable](#turn-the-print-spooler-off) command.
+1. Print off your stuff, then immedietly run the disable command.
 
 It's a weird workaround, but it works.
+

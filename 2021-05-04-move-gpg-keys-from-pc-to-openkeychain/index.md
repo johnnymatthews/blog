@@ -4,8 +4,6 @@ description: "I often find myself resetting my phone, which means I have to reim
 date: 2021-05-05
 ---
 
-# Move GPG keys from PC to OpenKeychain
-
 To export a GPG run:
 
 ```shell
@@ -27,3 +25,4 @@ export GPG_TTY=$(tty)
 ```
 
 And that's it! You're all done.
+

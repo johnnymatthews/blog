@@ -6,7 +6,7 @@ date: 2020-08-28
 
 So there isn't a `.config` file for CMUS. But there _is_ a `cmus` folder within my system's `~/.config` folder. This `~/.config/cmus` folder contains:
 
-```text
+```plaintest
 ├── autosave
 ├── cache
 ├── command-history
@@ -20,7 +20,7 @@ So there isn't a `.config` file for CMUS. But there _is_ a `cmus` folder within 
 
 I was looking for a `.config` file so I could add it to my post-linux-intstall-script. Turns out `autosave` serves the function of a `.config` file. It just contains a list of commands that run every time CMUS starts. It's a pretty long list:
 
-```text
+```plaintext
 set aaa_mode=all
 set altformat_current= %F 
 set altformat_playlist= %f%= %d 
@@ -36,3 +36,4 @@ factivate
 ```
 
 This looks like a decent place to create `fset` rules for playlists and other bindings. I'll have to take a look into this file a bit more.
+

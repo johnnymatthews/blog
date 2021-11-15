@@ -18,3 +18,4 @@ I _think_ the trailing slashes on those two paths are important. The rest of the
 | `--verbose` | Print the output to the terminal so we can see what we're doing. |
 | `--size-only` | When comparing files, only check the size of the file. Ignore the timestamp. This gets around some issues with external drives re-stamping the timestamp when copying over. |
 | `--update` | Only copies over files that don't exist in the destination folder, or if the source file has been modified more recently than the destination file. |
+

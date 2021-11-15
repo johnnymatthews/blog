@@ -4,8 +4,6 @@ date: 2021-03-01
 description: By default, you cannot copy something from the terminal into ChromeOS. If you want to access the terminal clipboard, you need to install the wl-clipboard package. 
 ---
 
-# Access the terminal clipboard in ChromeOS
-
 The `wl-clipboard` package is available on [GitHub](https://github.com/bugaevc/wl-clipboard).
 
 1. Open the terminal.
@@ -32,3 +30,5 @@ A copy of the `wl-clipboard_2.0.0-1_amd64.deb` package is available on IPFS:
     ```shell
     wget https://gateway.pinata.cloud/ipfs/Qma7HNYQ2pxH3y5S9mxL6xfybLMg6vEHhqV3a8qidLt4Sj
     ```
+
+

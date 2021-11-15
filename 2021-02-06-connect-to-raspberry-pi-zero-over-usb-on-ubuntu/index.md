@@ -4,6 +4,8 @@ description: I was messing around with a new Raspberry Pi Zero I got for Christm
 date: 2021-02-06
 ---
 
+Oh man this took me a while to figure out.
+
 1. Format micro SD card the normal way.
 1. Put an operating system on there using the [Raspberry Pi Imager for Ubuntu](https://www.raspberrypi.org/software/).
 1. Change directory into the `boot` partition of the micro SD card:

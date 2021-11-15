@@ -30,3 +30,4 @@ Then I removed `plasma-desktop-data` installed `plasma-desktop`:
 After that I did a quick reboot I found that it fixed most things. The on-screen keyboard popped up, but I was able to minimize it and login. Once I was in, everything looked the same. Tool bars were in the same place, touchpad settings still worked, all that stuff.
 
 Nice!
+

@@ -14,13 +14,13 @@ Enter ADB Sync! Google has thrown a package together that essentially acts as Rs
 
 1. Install ADB on your computer:
 
-    ```bash
+    ```shell
     sudo apt install android-tools-adb -y
     ```
 
 1. Check ADB is installed properly:
 
-    ```bash
+    ```shell
     adb --version
 
     > Android Debug Bridge version 1.0.39
@@ -30,7 +30,7 @@ Enter ADB Sync! Google has thrown a package together that essentially acts as Rs
 
 1. Grab the ADB Sync package from GitHub and move it somewhere handy:
 
-    ```bash
+    ```shell
     git clone https://github.com/google/adb-sync
     cd adb-sync
     sudo cp adb-sync /usr/local/bin/
@@ -38,7 +38,7 @@ Enter ADB Sync! Google has thrown a package together that essentially acts as Rs
 
 1. Check that ADB Sync is installed properly:
 
-    ```bash
+    ```shell
     adb-sync
     
     > usage: adb-sync [-h] [-e COMMAND] [--device] [--emulator] [-s DEVICE] [-H HOST] [-P PORT] [-R] [-2] [-t] [-d] [-f] [-n] [-L] [--dry-run] SRC [SRC ...] DST
@@ -51,20 +51,21 @@ Enter ADB Sync! Google has thrown a package together that essentially acts as Rs
 
 To synchronize your music files from `~/Music` to your device:
 
-```bash
+```shell
 adb-sync ~/Music /sdcard
 ```
 
 To synchronize your music files from ~/Music to your device, deleting files you removed from your PC:
 
-```bash
+```shell
 adb-sync --delete ~/Music /sdcard
 ```
 
 To copy all downloads from your device to your PC:
 
-```bash
+```shell
 adb-sync --reverse /sdcard/Download/ ~/Downloads
 ```
 
 That's about it! Pretty simple stuff.
+

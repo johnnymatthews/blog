@@ -4,8 +4,6 @@ description: Over the years I've accumulated a bunch of crap in my music library
 date: 2021-05-04
 ---
 
-# Remove crap from your music library
-
 Run this to get rid of all your crap:
 
 ```shell
@@ -17,7 +15,7 @@ The first runs through your library and finds any file that doesn't have any of 
 
 The second line _foreaches_ through each line in `delete-these` and deletes the corresponding line in that file. The `delete-these` file looks something like this:
 
-```
+```plaintest
 ...
 EDEN/End Credits/.DS_Store
 EDEN/Crazy In Love/.DS_Store
@@ -27,3 +25,4 @@ The Home Team/Better Off (2018)/.DS_Store
 ```
 
 It's worth mentioning that you need to be within your `Music` folder for these two lines to actually do anything useful. Also, the deletion in the second command is irreversable. Once it's ran, you're not getting that stuff back.
+

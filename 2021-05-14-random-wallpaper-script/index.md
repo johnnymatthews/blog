@@ -1,6 +1,6 @@
 ---
 title: Random wallpaper script
-description: Yet another blog post about setting your background wallpaper using a bash script. I know; revolutionary stuff.
+description: "Yet another blog post about setting your background wallpaper using a bash script. I know; revolutionary stuff."
 date: 2021-05-14
 ---
 

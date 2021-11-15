@@ -1,8 +1,10 @@
 ---
 title: Create a new virtual desktop in MacOS.
-description: MacOS has the ability to create multiple virtual desktops. I find this feature super handy because it allows me to have separate desktops for separate pieces of work. Annoying, Apple doesn't include a built-in hot-key to create a new desktop. However, with the use of Albert, we can create a script to create a new desktop for us!
+description: "MacOS has the ability to create multiple virtual desktops. I find this feature super handy because it allows me to have separate desktops for separate pieces of work. Annoying, Apple doesn't include a built-in hot-key to create a new desktop. However, with the use of Albert, we can create a script to create a new desktop for us!"
 date: 2021-05-31
 ---
+
+Virtual desktops good! Default MacOS behavour bad.
 
 1. Install Alfred.
 1. Buy the pro version.
