@@ -15,7 +15,7 @@ The first runs through your library and finds any file that doesn't have any of 
 
 The second line _foreaches_ through each line in `delete-these` and deletes the corresponding line in that file. The `delete-these` file looks something like this:
 
-```plaintest
+```plaintext
 ...
 EDEN/End Credits/.DS_Store
 EDEN/Crazy In Love/.DS_Store
