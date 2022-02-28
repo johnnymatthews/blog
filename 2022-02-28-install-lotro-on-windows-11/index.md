@@ -1,6 +1,6 @@
 ---
 title: Install LOTRO on Windows 11
-description: "Have you tried to install Lord of the Rings Online (LOTRO) on Steam, but it just won't open? Well, it's not opening because the game relies on a particular version of C++, which Standing Stone Games does not distribute with the game. Here's how to install it.
+description: "Have you tried to install Lord of the Rings Online (LOTRO) on Steam, but it just won't open? Well, it's not opening because the game relies on a particular version of C++, which Standing Stone Games does not distribute with the game. Here's how to install it."
 date: 2022-02-28
 ---
 
