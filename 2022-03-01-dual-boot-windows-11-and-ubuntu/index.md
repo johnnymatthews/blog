@@ -4,6 +4,8 @@ description: "Windows 11 is good for playing games, but crap at everything else.
 date: 2022-03-01
 ---
 
+This is fun.
+
 ## Install Windows
 
 1. Run a clean install of Windows.
