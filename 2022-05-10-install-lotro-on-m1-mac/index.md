@@ -4,11 +4,6 @@ description: "Installing Lord of the Rings Online (LOTRO) on a M1 Mac is shockin
 date: 2022-05-10
 ---
 
-# Install LOTRO on an M1 Mac
-
-
-![](./battery-status.png)
-
 ## Get Crossover by Codeweavers
 
 1. Go to [codeweavers.com](https://www.codeweavers.com/)
