@@ -4,6 +4,8 @@ description: "Installing Lord of the Rings Online (LOTRO) on a M1 Mac is shockin
 date: 2022-05-10
 ---
 
+This won't take long. Took me about 15 minutes, end-to-end.
+
 ## Get Crossover by Codeweavers
 
 1. Go to [codeweavers.com](https://www.codeweavers.com/)
