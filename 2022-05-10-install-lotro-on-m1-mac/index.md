@@ -1,6 +1,11 @@
+---
+title: "Install LOTRO on an M1 Mac"
+description: "Installing Lord of the Rings Online (LOTRO) on a M1 Mac is shockingly easy. It's pretty much a two step process, well mostly. I'm running a 2020 Macbook Air with 8GB RAM. My battery was fully charged before I started this installation, and by the time I was able to play the game, it had dropped down to 90%. This CPU is insane."
+date: 2022-05-10
+---
+
 # Install LOTRO on an M1 Mac
 
-Installing Lord of the Rings Online (LOTRO) on a M1 Mac is shockingly easy. It's pretty much a two step process, well mostly. I'm running a 2020 Macbook Air with 8GB RAM. My battery was fully charged before I started this installation, and by the time I was able to play the game, it had dropped down to 90%. This CPU is insane.
 
 ![](./battery-status.png)
 
