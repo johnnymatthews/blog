@@ -1,6 +1,10 @@
-# How to store private information on a public network
+---
+title: "How to store private information on a public network"
+description: "This is a bit of a silly question: _how do you store private information on a public network?_ I guess one question is _why would you bother doing that in the first place? If you've got private information, store it on a private network_. And that's a fair statement to make. "
+date: 2022-06-01
+---
 
-This is a bit of a silly question: _how do you store private information on a public network?_ I guess one question is _why would you bother doing that in the first place? If you've got private information, store it on a private network_. And that's a fair statement to make. But, if you want to store data on a blockchain, that data is public by default. You can either:
+But, if you want to store data on a blockchain, that data is public by default. You can either:
 
 - only store public information on a blockchain, or
 - you can find a way to obfuscate and encrypt your data so that it becomes incredibly difficult to make sense of it all.
