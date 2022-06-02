@@ -17,19 +17,13 @@ This first step to securing your data is to encrypt it. However, you can't just 
 
 So you do that; you grab your data, compress it into a single file, and then encrypt the living crap out of it until you've got a garbled mess of bytes that no one can make sense of except you. What next? Can you put it on the blockchain now? Well, you _could_, but there's another thing you can do to make things even more secure.
 
-<picture>
-    <source srcset="./encryption-path-white.png" media="(prefers-color-scheme: dark)">
-    <img src="./encryption-path-black.png">
-</picture>
+{{< light-and-dark-images "encryption-path" >}}
 
 ## Split it up
 
 Chop it up. Grab your single file, split it up into several segments, and then upload them to the chain, preferably sending the transactions from separate addresses. This way, if an attacker grabs a single piece of your data, they won't be able to begin un-encrypting your data since they'll need all the pieces of the puzzle. You could also throw in random blocks of encrypted garbage into the mix by uploading them to the chain, leading an attacker to believe that they're also part of the _whole_ and attempt to decrypt them with the others.
 
-<picture>
-    <source srcset="./transaction-process-white.png" media="(prefers-color-scheme: dark)">
-    <img src="./transaction-process-black.png">
-</picture>
+{{< light-and-dark-images "transaction-process" >}}
 
 ## The puzzling problem
 
@@ -40,4 +34,3 @@ Now, to me, this seems like a pretty decent way to minimize the risk that someon
 The best way to figure out how to deal with this problem is to do the first part of this solution myself. Grab some data, encrypt the crap out of it, split it up, and upload it to Filecoin using several different addresses. Along the way, I'll play around with ways to record my process safely.
 
 Keep an eye out for part two.
-
