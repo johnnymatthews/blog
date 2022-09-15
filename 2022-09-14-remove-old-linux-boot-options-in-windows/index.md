@@ -4,9 +4,9 @@ description: "If you're like me, you'll often find yourself installing new and e
 date: 2022-09-14
 ---
 
-I ran this stuff on Windows 11, but it should work on anything above Windows XP. If you're still actually running Windows XP, I know some people that would love to know your IP address.
+I ran this stuff on Windows 11, but it should work on anything above Windows XP. If you're still running Windows XP, I know some people who would love to know your IP address.
 
-1. Open CMD with elevated privilages.
+1. Open CMD with elevated privileges.
 1. Show your boot options with `bcdedit /enum firmware`:
 
     ```shell
@@ -49,7 +49,7 @@ I ran this stuff on Windows 11, but it should work on anything above Windows XP.
     > description             elementary OS 6.1 Jólnir
     ```
 	
-1. Find the identifier of the boot option/s that you want to delete. In my case I want to remove `elementary OS 6.1 Jólnir` and `Pop!_OS 22.04 LTS`.
+1. Find the identifier of the boot option/s that you want to delete. I want to remove `elementary OS 6.1 Jólnir` and `Pop!_OS 22.04 LTS`.
 1. Delete each boot option, in turn, with `bcdedit /delete <{identifier}>`:
 
     ```shell
