@@ -4,7 +4,8 @@ description: "I'm not sure why this keeps happening, but every now and again the
 date: 2022-12-23
 ---
 
-1. Run `hwclock -s` as sudo:
+1. Open WSL.
+1. Use `hwclock -s` to set the system clock from the hardware clock:
 
     ```shell
     sudo hwclock -s
