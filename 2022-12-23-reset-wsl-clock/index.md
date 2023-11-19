@@ -12,3 +12,21 @@ date: 2022-12-23
     ```
 
 1. That's it.
+
+## Update using NTPdate
+
+For some reason, my Ubuntu clock gets out of sync with NTP servers on new installation. Here's how to deal with that.
+
+1. Install `ntpdate`:
+
+    ```shell
+    sudo apt install ntpdate -y
+    ```
+
+1. Update your system clock with `ntpdate` using the [NIST](https://www.nist.gov/) time server:
+
+    ```shell
+    sudo ntpdate time.nist.gov
+    ```
+
+1. You should be good now!
