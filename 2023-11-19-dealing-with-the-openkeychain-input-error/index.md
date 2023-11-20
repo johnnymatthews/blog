@@ -19,8 +19,10 @@ I recently encountered this error when updating my keys for my password store. T
 1. Specify that you want to use this specific GPG version for your current terminal session:
 
     ```shell
-    echo 'export PATH="/opt/homebrew/opt/gnupg@2.2/bin:$PATH"' >> /Users/bat9r/.bash_profile && source ~/.bash_profile
+    echo 'export PATH="/opt/homebrew/opt/gnupg@2.2/bin:$PATH"' >> /Users/johnnymatthews/.bash_profile && source ~/.bash_profile
     ```
+
+    Replace `johnnymatthews` with your username.
 
 1. Re-initialise your password store:
 
