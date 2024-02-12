@@ -6,7 +6,7 @@ date: 2023-10-04
 
 We're going to make Firefox look like this:
 
-![A Firefox browser with verital tabs, showing The Verge homepage.](./firefox-preview.png)
+![A Firefox browser with verital tabs, showing The Verge homepage.](./theverge-homepage.png)
 
 The steps are pretty simple. We're going to:
 
@@ -26,11 +26,16 @@ The steps are pretty simple. We're going to:
 
 Firefox allows you to manually change the way the application looks by enabling a custom config setting and editing some `.CSS` files.
 
-1. In Firefox, go to [about:config](about:config).
+1. In Firefox, go to `about:config`
 1. Click **Accept the Risk and Continue**.
-1. In the **Search preference name** search bar, enter `toolkit.legacyUserProfileCustomizations.stylesheets`.
+1. In the **Search preference name** search bar, enter:
+
+    ```
+    toolkit.legacyUserProfileCustomizations.stylesheets
+    ```
+
 1. Click the toggle button on the right so the preference says `true`.
-1. Still in Firefox, go to [about:support](about:support).
+1. Still in Firefox, go to `about:support`
 1. Find **Profile Folder** section and click **Open Folder**.
 
     ![The Firefox browser with the hidden support menu open.](./open-profile-folder.png)
@@ -39,92 +44,194 @@ Firefox allows you to manually change the way the application looks by enabling 
 1. Inside this new `chrome` folder, create a file called `userChrome.css`. Make sure the file extension is actually `.css` and not `.txt`.
 1. Within `userChrome.css` copy and paste the following code:
 
-	```css
-	#TabsToolbar {
-		visibility: collapse;
-	}
+    ```css
+    #TabsToolbar {
+        visibility: collapse;
+    }
 
-	#titlebar {
-		visibility: collapse;
-	}
+    #titlebar {
+        visibility: collapse;
+    }
 
-	#sidebar-header {
-		visibility: collapse !important;
-	} 
+    #sidebar-header {
+        visibility: collapse !important;
+    }
 
-	.tabbrowser-tab[pinned][selected] ~ .tabbrowser-tab:not([pinned]) {
-	  transition-duration: 0s !important;
-	  transition-property: width, visibility, min-width, -moz-box-flex !important;
-	  transition-delay: 3600s !important; /* = 1hr, adjust seconds to increase / decrease visibility */
-	}
+    .tabbrowser-tab[pinned][selected] ~ .tabbrowser-tab:not([pinned]) {
+        transition-duration: 0s !important;
+        transition-property:
+            width,
+            visibility,
+            min-width,
+            -moz-box-flex !important;
+        transition-delay: 3600s !important; /* = 1hr, adjust seconds to increase / decrease visibility */
+    }
 
-	.tabbrowser-tab:not([pinned]):not([selected]) {
-	  visibility: hidden;
-	  overflow: hidden;
-	  min-width: 0 !important;
-	  -moz-box-flex: 0 !important;
-	}
+    .tabbrowser-tab:not([pinned]):not([selected]) {
+        visibility: hidden;
+        overflow: hidden;
+              min-width: 0 !important;
+              -moz-box-flex: 0 !important;
+    }
 
-	.tabbrowser-tab:not([pinned]) {
-	  min-width: 0 !important;
-	  transition-property: width, visibility !important;
-	  transition-duration: 0.4s !important; /* slide shut */
-	  transition-delay: 180s !important; /* wait X seconds before hiding inactive tabs | 0 = immediate */
-	}
+    .tabbrowser-tab:not([pinned]) {
+        min-width: 0 !important;
+        transition-property: width, visibility !important;
+        transition-duration: 0.4s !important; /* slide shut */
+        transition-delay: 180s !important; /* wait X seconds before hiding inactive tabs | 0 = immediate */
+    }
 
-	.tabbrowser-tab[selected]:not([pinned]) {
-	  min-width: var(--tab-min-width) !important;
-	  width: var(--tab-min-width) !important;
-	  transition-duration: 0s !important; /* = immediate */
-	  transition-delay: 0s !important; /* = immediate */
-	}
+    .tabbrowser-tab[selected]:not([pinned]) {
+        min-width: var(--tab-min-width) !important;
+    width: var(--tab-min-width) !important;
+           transition-duration: 0s !important; /* = immediate */
+           transition-delay: 0s !important; /* = immediate */
+    }
 
-	#sidebar {
-	  max-width: none !important;
-	  min-width: 0px !important;
-	}
+    #sidebar {
+        max-width: none !important;
+        min-width: 0px !important;
+    }
 
-	#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
-	  display: none !important;
-	}
+    #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+        + #sidebar-splitter {
+        display: none !important;
+    }
 
-	#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
-	  visibility: collapse;
-	}
+    #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+        #sidebar-header {
+        visibility: collapse;
+    }
 
-	:root {
-	  --thin-tab-width: 30px;
-	  --wide-tab-width: 300px;
-	}
+    :root {
+        --thin-tab-width: 30px;
+        --wide-tab-width: 300px;
+    }
 
-	#sidebar-box:not([sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]) {
-	  min-width: var(--wide-tab-width) !important;
-	  max-width: none !important;
-	}
+    #sidebar-box:not(
+        [sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+    ) {
+        min-width: var(--wide-tab-width) !important;
+        max-width: none !important;
+    }
 
-	#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
-	  overflow: hidden !important;
-	  position: relative !important;
-	  transition: all 300ms !important;
-	  /*transition: all 0ms 0s !important;*/
-	  min-width: var(--thin-tab-width) !important;
-	  max-width: var(--thin-tab-width) !important;
-	  z-index: 2;
-	}
+    #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+        overflow: hidden !important;
+        position: relative !important;
+        transition: all 300ms !important;
+        min-width: var(--thin-tab-width) !important;
+        max-width: var(--thin-tab-width) !important;
+        z-index: 2;
+    }
 
     #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
-    #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar {
-	  /*transition-delay: 0s !important;*/
-	  transition: all 300ms !important;
-	  min-width: var(--wide-tab-width) !important;
-	  max-width: var(--wide-tab-width) !important;
-	  z-index: 1;
-	}
+    #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+    #sidebar {
+        /*transition-delay: 0s !important;*/
+        transition: all 300ms !important;
+            min-width: var(--wide-tab-width) !important;
+            max-width: var(--wide-tab-width) !important;
+            z-index: 1;
+    }
 
     #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover {
-	  margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important;
-	}
-	```
+        margin-right: calc(
+            (var(--wide-tab-width) - var(--thin-tab-width)) * -1
+        ) !important;
+    }
+
+    /* ------------------------ */
+    /* Autohide menu bar. */
+    /* ------------------------ */
+
+    /* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/autohide_main_toolbar.css made available under Mozilla Public License v. 2.0
+       See the above repository for updates as well as full license text. */
+
+    /* This style hides the main toolbar and shows it when the cursor is over the tabs toolbar as well as whenever the focus is inside nav-bar, such as when urlbar is focused. */
+
+    :root {
+        --uc-navbar-transform: -40px;
+    }
+    :root[uidensity="compact"] {
+        --uc-navbar-transform: -34px;
+    }
+
+    #navigator-toolbox > div {
+        display: contents;
+    }
+    :root[sessionrestored]
+    :where(
+        #nav-bar,
+        #PersonalToolbar,
+        #tab-notification-deck,
+            .global-notificationbox
+    ) {
+        transform: translateY(var(--uc-navbar-transform));
+    }
+    :root:is([customizing], [chromehidden*="toolbar"])
+    :where(
+        #nav-bar,
+        #PersonalToolbar,
+        #tab-notification-deck,
+        .global-notificationbox
+    ) {
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+#nav-bar:not([customizing]) {
+    opacity: 0;
+    transition:
+        transform 400ms ease 1.8s,
+        opacity 400ms ease 1.8s !important;
+    position: relative;
+        z-index: 2;
+    }
+    #TabsToolbar {
+        position: relative;
+        z-index: 3;
+    }
+
+    /* Show when toolbox is focused, like when urlbar has received focus */
+    #navigator-toolbox:focus-within > .browser-toolbar {
+        transform: translateY(0);
+        opacity: 1;
+        transition-duration: 500ms, 200ms !important;
+        transition-delay: 0s !important;
+    }
+    /* Show when toolbox is hovered */
+    #titlebar:hover ~ .browser-toolbar,
+    #nav-bar:hover,
+    #nav-bar:hover + #PersonalToolbar {
+    transform: translateY(0);
+    opacity: 1;
+        transition-duration: 500ms, 200ms !important;
+        transition-delay: 0s !important;
+    }
+
+    /* This ruleset is separate, because not having :has support breaks other selectors as well */
+    #mainPopupSet:has(> #appMenu-popup:hover)
+    ~ #navigator-toolbox
+    > .browser-toolbar {
+        transition-delay: 33ms !important;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Bookmarks toolbar needs so extra rules */
+    #PersonalToolbar {
+        transition: transform 400ms ease 1.8s !important;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Move up the content view */
+    :root[sessionrestored]:not([inFullscreen], [chromehidden~="toolbar"])
+    > body
+    > #browser {
+        margin-top: var(--uc-navbar-transform);
+    }
+    ```
 
 1. Save and close `userChrome.css`.
 
@@ -136,10 +243,11 @@ Lastly, we just need to edit the styling for the Tree Style Tab extension.
 
     ![](./click-manage-extension.png)
 
-1. Select the **Options** tab and then click **Open this options page in more wide space**:
+1. Select the **Options** or **Preferences** tab and then click **Open this options page in more wide space**:
 
     ![](./select-options-tab.png)
 
+1. Under **Appreance**, select **Proton**.
 1. Open the **Advanced** dropdown and find the **User Style Sheet** section:
 
     ![](./advanced-style-options.png)
