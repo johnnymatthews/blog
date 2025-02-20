@@ -7,7 +7,7 @@ post_date=$(date +"%Y-%m-%d")
 read -p "Enter post title: " post_title
 
 # Slugify the post title.
-slugified_title=$(echo "$post_title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+slugified_title=$(echo "$post_title" | tr '[:upper:]' '[:lower:]' | tr -c '[:alnum:]' '-' | tr -s '-' | sed 's/-$//')
 
 # Create a directory for the post.
 mkdir "$post_date-$slugified_title"
