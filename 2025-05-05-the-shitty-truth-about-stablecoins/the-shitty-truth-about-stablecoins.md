@@ -8,6 +8,9 @@ date: 2025-05-05
 <!--   Kinda. There's lots of debate about this. -->
 <!--   Having no-one control the pipes is good. Privacy and stabilty for all. -->
 <!--   But harder to control means harder to stop the bad guys from doing bad stuff. -->
+
+Enter stablecoins: digital assets pegged to fiat currencies that promise to _revolutionnize payments_. Web3 maximalists have been going on and on about how crypto is gonna change the world and all that business, and they've mostly been wrong. However, stablecoins have become the latest lightning rod in debates about sanctions, financial privacy, and who get to control the money pipes. Thing is, this technology isn't some magic bullet for sanctions evasion, nor is it the apocalyptic threat to regulation and order that policymakers fear.
+
 <!--   But both sides are wrong: -->
 <!--     stablecoins aren't a sancations-evading silver bullet -->
 <!--     it's also not an apocalyptic threat to regulatory order -->
