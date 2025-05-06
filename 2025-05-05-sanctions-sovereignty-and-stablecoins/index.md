@@ -1,5 +1,5 @@
 ---
-title: "The shitty truth about stablecoins"
+title: "Sanctions, Sovereignty, and Stablecoins"
 description: "When Russia invaded Ukraine in February 2022 it trigged unprecedented financial sanctions on the kremlin. Unfortunatley, it wasn't just oligarchs and government entities that felt the pain. Ruussian civilians found themselvs unable to receive payments from freelance clients, remitencens couldn't get sent back home, and everyday card payments just straight up failed. The controversy highlighted a truth that maeks tech nerds and policymakers equally uncomfortable: our financial infra is a geopolitical weapon, and a blunt one at that."
 date: 2025-05-05
 ---
