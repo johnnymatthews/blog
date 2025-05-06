@@ -4,11 +4,7 @@ description: "This is a description."
 date: 2025-05-05
 ---
 
-<!-- Sanctions affect civilains. -->
-<!-- Russia invaded Ukraine. This lead the western world to hurl sanctions at Russia, and any country that supported them. While this _somewhat_ slowed down the Russian government's movement of funds, it had a improportionally massive impact on regular russian citizens who suddenly found themselves without a way to take payment from overseas. Freelancers couldn't get paid, remitencnes couldn't get sent, and purchases couldn't be made. Fucking, shit show.  -->
-
-<!-- Financial infrastrucure is a weapon -->
-<!-- This controversy highlights a situation that makes tech nerds and policy makers equally uncomfortable: financial infrastrucure is an incredibly blunt geopolitical weapon. -->
+When Russia invaded Ukraine in February 2022 it trigged unprecedented financial sanctions on the kremlin. Unfortunatley, it wasn't just oligarchs and government entities that felt the pain. Ruussian civilians found themselvs unable to receive payments from freelance clients, remitencens couldn't get sent back home, and everyday card payments just straight up failed. The controversy highlighted a truth that maeks tech nerds and policymakers equally uncomfortable: our financial infra is a geopolitical weapon, and a blunt one at that.
 
 <!-- Stablecoins to the rescue. -->
 <!--   Kinda. There's lots of debate about this. -->
