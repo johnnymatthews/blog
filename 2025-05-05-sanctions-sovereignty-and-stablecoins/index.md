@@ -1,7 +1,7 @@
 ---
 title: "Sanctions, Sovereignty, and Stablecoins"
 description: "When Russia invaded Ukraine in February 2022 it trigged unprecedented financial sanctions on the kremlin. Unfortunatley, it wasn't just oligarchs and government entities that felt the pain. Ruussian civilians found themselvs unable to receive payments from freelance clients, remitencens couldn't get sent back home, and everyday card payments just straight up failed. The controversy highlighted a truth that maeks tech nerds and policymakers equally uncomfortable: our financial infra is a geopolitical weapon, and a blunt one at that."
-date: 2025-05-05
+date: 2025-05-07
 ---
 
 Enter stablecoins: digital assets pegged to fiat currencies that promise to _revolutionnize payments_. Web3 maximalists have been going on and on about how crypto is gonna change the world and all that business, and they've mostly been wrong. Stablecoins have become the latest lightning rod in debates about sanctions, financial privacy, and who get to control the money pipes. The thing is, this technology isn't some magic bullet for sanctions evasion, nor is it the apocalyptic threat to regulation and order that policymakers fear.
