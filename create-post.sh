@@ -13,8 +13,8 @@ slugified_title=$(echo "$post_title" | tr '[:upper:]' '[:lower:]' | tr -c '[:aln
 mkdir "$post_date-$slugified_title"
 
 # Add a .md using the below template.
-touch "$post_date-$slugified_title/$slugified_title.md"
-cat > "$post_date-$slugified_title/$slugified_title.md" <<EOF
+touch "$post_date-$slugified_title/index.md"
+cat > "$post_date-$slugified_title/index.md" <<EOF
 ---
 title: "$post_title"
 description: "This is a description."
