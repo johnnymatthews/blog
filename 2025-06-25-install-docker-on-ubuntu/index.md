@@ -6,7 +6,7 @@ date: 2025-06-25
 
 Alright, here we go:
 
-1. Grab [this script](./install-docker-on-ubuntu.sh):
+1. Grab [this script](./install-docker.sh):
 
   ```shell
   wget https://johnnymatthews.dev/blog/2025-06-25-install-docker-on-ubuntu/install-docker-on-ubuntu.sh
