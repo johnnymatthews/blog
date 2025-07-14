@@ -9,7 +9,7 @@ Alright, here we go:
 1. Grab [this script](./install-docker.sh):
 
   ```shell
-  wget https://johnnymatthews.dev/blog/2025-06-25-install-docker-on-ubuntu/install-docker-on-ubuntu.sh
+  wget https://johnnymatthews.dev/blog/2025-06-25-install-docker-on-ubuntu/install-docker.sh
   ```
 
 1. Give it executable permissions:
