@@ -91,4 +91,67 @@ This step is optional but useful if you, like me, end up with tens of VMs sat in
 
 ## Make a Ubuntu box
 
+Now to the fun stuff.
 
+1. Create a VM with custom specs:
+
+   ```shell
+   multipass launch --name my-dev-box --cpus 2 --memory 4G --disk 30G
+   ```
+
+   This gives you 2 CPUs, 4GB of RAM, and 30GB of disk space. For reference, I'm running an M4 MacBook Air with 24GB of RAM, and I give each of my VMs 8GB of RAM and 4 CPUs with 30GB of disk space. I generaly only run one VM at a time though.
+
+1. Check that your VM is running:
+
+   ```shell
+   multipass list
+   ```
+
+   ```output
+   Name                    State             IPv4             Image
+   my-dev-box              Running           192.168.64.2     Ubuntu 24.04 LTS
+   ```
+
+1. Shell into your new VM:
+
+   ```shell
+   multipass shell my-dev-box
+   ```
+
+   You should now be inside your Ubuntu VM. The prompt will change to something like `ubuntu@my-dev-box:~$`.
+
+1. Install whatever you need without worrying about mucking up your host machine:
+
+   ```shell
+   sudo apt update && sudo apt upgrade -y
+   sudo apt install nodejs npm python3-pip git -y
+   npm install --global some-sketchy-package
+   ```
+
+   If you break something, just delete the VM and start again.
+
+1. When you're done, exit the VM:
+
+   ```shell
+   exit
+   ```
+
+1. Stop the VM to save resources:
+
+   ```shell
+   multipass stop my-dev-box
+   ```
+
+   Tack on the `--all` option if you can't be arse typing out your VM name:
+
+   ```shell
+   multipass stop --all
+   ``` 
+
+1. Delete the VM entirely once you're done with it:
+
+   ```shell
+   multipass delete my-dev-box --purge
+   ```
+
+That's it! You've now got a sandboxed Ubuntu environment to use for testing sketchy packages or just keeping your local environment clean.
