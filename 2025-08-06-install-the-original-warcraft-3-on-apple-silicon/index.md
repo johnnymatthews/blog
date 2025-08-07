@@ -27,11 +27,11 @@ You literally just need [Crossover](https://www.codeweavers.com/crossover) insta
 
   ![](./select-roc-in-crossover.png)
 
-1. Your screen might go black a couple of times, but it _should_ eventually open to the classic Warcraft 3 welcome screen:
+7. Your screen might go black a couple of times, but it _should_ eventually open to the classic Warcraft 3 welcome screen:
   
   ![](./wc3-roc-welcome-screen.png)
 
-1. You're done.
+8. You're done.
 
 ## Some things to note
 
