@@ -23,7 +23,6 @@ You literally just need [Crossover](https://www.codeweavers.com/crossover) insta
 1. In the menubar select **File** and then **Open**.
 1. Select the **wc3.cxarchive** package you just downloaded.
 1. Give the bottle a nice name like _omfg best game 4evr_ and click **Create**.
-1. Wait a few seconds while Crossover does it's thing.
 1. Double-click either the _Reign of Chaos_ or _The Frozen Throne_ icons, depending on which emotions you want to feel:
 
   ![](./select-roc-in-crossover.png)
