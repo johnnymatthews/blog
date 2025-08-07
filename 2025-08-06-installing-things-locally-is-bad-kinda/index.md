@@ -4,7 +4,7 @@ description: "I travel a lot, which oftens means I have shakey or non-existent w
 date: 2025-08-06
 ---
 
-Multipass is a straight-forward virtual machine (VM) management application from Canonical (the folks who make and maintain Ubuntu). Basically, Multipass lets you run Unix-based oses straight from the terminal on Apple silicon. Applications like QEMU, VirtualBox, and VMWare let you do this already, but I find Multipass to be the simpliest approach if you don't care about GUIs or GPU-accessiblity or anything like that. I've got another guide in the mix for opening a GUI application in a Multipass VM; maybe I'll post a link to it here once it's out (if I remember).
+Multipass is a straight-forward virtual machine (VM) management application from Canonical (the folks who make and maintain Ubuntu). Basically, Multipass lets you run Unix-based oses straight from the terminal on Apple silicon. Applications like QEMU, VirtualBox, and VMWare let you do this already, but I find Multipass to be the simpliest approach if you don't care about GUIs or GPU-accessiblity or anything like that. I've got another guide for [opening a GUI application in a Multipass VM](../2025-04-29-enable-gui-applications-in-multipass), if you're interested in reading that.
 
 We're gonna run through three things here:
 
